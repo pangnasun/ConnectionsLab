@@ -1,1 +1,3 @@
 ## Connected Application: [Sound of the Earth: Chapter 3](https://soundoftheearth.org/)
+
+ _Sound of the Earth: Chapter3_ is a connected application that allows people to record and submits sounds from all around the world. Listening to the audios being played was very captivating because they were unqiue and varied, depending on where they were recorded from. For instance, some sounds were recorded at night in the country, so you could hear the sound of crickets chirping. Others were recorded in a city, so you could of cars driving by. Other sounds were so strange you couldnot make sense of. With wide specturms 
