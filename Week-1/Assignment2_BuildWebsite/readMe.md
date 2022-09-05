@@ -1,6 +1,7 @@
 # Assignment 2: Building a Webpage
 
 ### My Journey
+#### Creating Wireframes
 I started the process by creating my two wireframes:
 
 *Wireframe #1*
@@ -12,6 +13,9 @@ I started the process by creating my two wireframes:
 
 ![Wireframe #1](wireframes/Wireframe2.png)
 
+I was not quite sure what to include, so designed the most basic wireframe with the elements that I know I will need on my webpage. I liked the first wireframe better, so I used it to start my HTML coding. 
+
+### HTML Coding
 
 
 https://pangnasun.github.io/ConnectionsLab/Week-1/Assignment2_BuildWebsite/
