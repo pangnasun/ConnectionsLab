@@ -36,4 +36,7 @@ One problem I encountered was embedding a video to my page. I tried using the *v
 
 I did more debuggings, and it turned out that the link of the video *src* has a specific format (requires *"/embed/VideoID"*). Following this format, I was able to add my Youtube video.
 
+### CSS Styling
+With all the HTML elements in place, I added a CSS file to make things look better. I formated the headers first because I could just use *h1* and *h4*. Then I added classes to other components, so I could format them. It required testings and seeing what made my webpage look good. 
+
 https://pangnasun.github.io/ConnectionsLab/Week-1/Assignment2_BuildWebsite/
