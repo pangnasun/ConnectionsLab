@@ -34,6 +34,6 @@ One problem I encountered was embedding a video to my page. I tried using the *v
 
 ![webpage #3](ScreenShots/webpage_3.png)
 
-I did more debuggings, and it turned out that the link of the video *src* has a specific format (requires *"https://www.youtube.com/embed/VideoID"*). Following this format, I was able to add my Youtube video.
+I did more debuggings, and it turned out that the link of the video *src* has a specific format (requires *"/embed/VideoID"*). Following this format, I was able to add my Youtube video.
 
 https://pangnasun.github.io/ConnectionsLab/Week-1/Assignment2_BuildWebsite/
