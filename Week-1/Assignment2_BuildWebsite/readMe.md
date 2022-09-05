@@ -18,4 +18,9 @@ I was not quite sure what to include, so designed the most basic wireframe with 
 #### HTML Coding
 Following the in-clas example, I creaded an HTML file and changed the page title to "Pangna Sun's Projects. Then I added headers, images, and description about my project. 
 
+*Initial Webpage Screenshot #1*
+
+![webpage #1](ScreenShots/webpage_1.png)
+
+
 https://pangnasun.github.io/ConnectionsLab/Week-1/Assignment2_BuildWebsite/
