@@ -28,8 +28,7 @@ Following the in-clas example, I creaded an HTML file and changed the page title
 
 The screenshots above show the state of my webstate after I included almost all the necessary components. The webpage looked very plain and the format was very off. For example, the image was too big and the alignemnts of the texts were not proper as well. Thus, I kept in mind when I started CSS styling. 
 
-One problem I encountered was embedding a video to my page. I tried using the <video> tag, but it didn't work because I was using a Youtube video. I did more research and figured that I needed to use the <iframe> tag. I followed an online example but faced with the error below:
-  
+One problem I encountered was embedding a video to my page. I tried using the <video> tag, but it didn't work because I was using a Youtube video. I did more research and figured that I needed to use the <iframe> tag. I followed an online example but faced with the error below.
 
 *Initial Webpage Screenshot #3*
 
