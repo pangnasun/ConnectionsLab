@@ -3,6 +3,7 @@
 [Preview](https://pangnasun.github.io/ConnectionsLab/Week-1/Assignment2_BuildWebsite/)
 
 ### My Journey
+
 #### Creating Wireframes
 I started the process by creating my two wireframes:
 
