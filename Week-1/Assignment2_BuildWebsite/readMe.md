@@ -22,5 +22,13 @@ Following the in-clas example, I creaded an HTML file and changed the page title
 
 ![webpage #1](ScreenShots/webpage_1.png)
 
+*Initial Webpage Screenshot #2*
+
+![webpage #2](ScreenShots/webpage_2.png)
+
+*Initial Webpage Screenshot #3*
+
+![webpage #3](ScreenShots/webpage_3.png)
+
 
 https://pangnasun.github.io/ConnectionsLab/Week-1/Assignment2_BuildWebsite/
