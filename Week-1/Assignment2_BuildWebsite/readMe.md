@@ -39,8 +39,9 @@ I did more debuggings, and it turned out that the link of the video *src* has a 
 ### CSS Styling
 With all the HTML elements in place, I added a CSS file to make things look better. I formated the headers first because I could just use *h1*, *h2* and *h4*. Then I added classes to other components, so I could format them. It required testings and seeing what made my webpage look good. For example, I adjusted the font and backgound colors of my three headers to get the best contrast. In addition, I also played around with *flex* to position my different components. The result is as shown below:
 
-*Final Webpage Screensho*
+*Final Webpage Screenshot*
 
 ![webpage #4](ScreenShots/webpage_4.png)
 
-https://pangnasun.github.io/ConnectionsLab/Week-1/Assignment2_BuildWebsite/
+### Final Webage
+Pleae refer to this [link](https://pangnasun.github.io/ConnectionsLab/Week-1/Assignment2_BuildWebsite/)
