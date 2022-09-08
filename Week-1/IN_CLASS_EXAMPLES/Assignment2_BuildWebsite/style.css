@@ -1,0 +1,47 @@
+h1 {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 70pt;
+
+}
+h2 {
+  padding: 30px;
+  text-align: flex-start;
+  background: #0fdacf;
+  color: rgb(172, 49, 189);
+  font-size: 40pt;
+}
+
+.demo{
+  width:auto;
+  height:480px;
+}
+
+.visual{
+  display: flex; 
+  justify-content: space-around;
+  background: #6f7e7d71;
+}
+body{
+  background-color:rgb(154, 149, 184);
+  font-family:fantasy;
+}
+
+h4 {
+  text-align: center;  
+  color: rgb(71, 79, 199);
+  font-size: 25px;
+  font-family:fantasy;
+}
+
+.description{
+  font-size: 15pt;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+}
+
