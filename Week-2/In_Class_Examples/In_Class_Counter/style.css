@@ -1,0 +1,12 @@
+body{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+
+}
+.container{
+    justify-content: center;
+}
+.container-result{
+    align-items: center;
+}

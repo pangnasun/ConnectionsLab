@@ -15,6 +15,7 @@ body{
   margin-bottom: 20px;
 }
 
+/*specific changes for mobile*/
 @media screen and (max-width: 728px){
   body {
     background-color: aquamarine;
