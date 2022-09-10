@@ -32,6 +32,7 @@ window.addEventListener('load', ()=>{
          {
             console.log('empty page');
             alert('Please enter page number');
+            return;
         }
         notesPage.innerHTML = inputPage.value;
         notesTitle.innerHTML = inputTitle.value;
