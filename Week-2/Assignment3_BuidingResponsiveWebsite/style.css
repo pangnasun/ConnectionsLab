@@ -14,19 +14,20 @@ body{
     /* font-size: 3.2vw; */
     /* font-size: 3.2vh; */
     /* font-size: 3.2vw; */
-
+    background-color:rgb(72, 124, 146);
     font-size: 18px;
     font-family: PassingNotes;
 }
 
 .container{
-    width: 100%;
+    width: 90%;
     /* margin: 0 auto; */
     display: flex;
     flex-direction: column;
     background-color:#fcfcd4;
     padding: 15px 10px;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 5%;
 
 }
 
@@ -66,6 +67,7 @@ body{
     /* text-align: right; */
     float: right;
    text-indent: 60%;
+   
 }
 .notes-title{
     width: 100%;
