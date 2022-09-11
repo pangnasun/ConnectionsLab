@@ -34,7 +34,12 @@ window.addEventListener('load', ()=>{
             alert('Please enter page number');
             return;
         }
-        notesPage.innerHTML = inputPage.value;
+        notesPage.innerHTML = 'Current page number: ' + inputPage.value;
         notesTitle.innerHTML = inputTitle.value;
+    })
+
+    let inputNotes = document.getElementById('input-note');
+    inputNotes.addEventListener('change',()=>{
+        
     })
 })
