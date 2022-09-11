@@ -34,7 +34,20 @@ window.addEventListener('load', ()=>{
             alert('Please enter page number');
             return;
         }
-        notesPage.innerHTML = inputPage.value;
+        notesPage.innerHTML = 'Current page number: ' + inputPage.value;
         notesTitle.innerHTML = inputTitle.value;
     })
+
+    let inputNotes = document.getElementById('input-note');
+    inputNotes.addEventListener('change',()=>{
+
+    })
+
+    let textarea = document.getElementById("notes-area");
+    textarea.addEventListener("keydown", function (e) {
+    if (e.key == 'Enter') { // keyCode 13 corresponds to the Enter key
+        e.preventDefault(); // prevents inserting linebreak
+        textarea.value = '';
+    }
+    });
 })
