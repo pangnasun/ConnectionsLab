@@ -14,7 +14,7 @@ body{
     /* font-size: 3.2vw; */
     /* font-size: 3.2vh; */
     /* font-size: 3.2vw; */
-    background-color:rgb(72, 124, 146);
+    background-color:rgb(72, 77, 146);
     font-size: 18px;
     font-family: PassingNotes;
 }
@@ -101,7 +101,7 @@ textarea {
 input{
     font-family: 'Dancing Script', cursive;
 }
-}
+
 /* text::after{
     content:"";
     display: inline-block;
@@ -112,8 +112,17 @@ input{
     background-color:white;
 } */
 
+.images{
+    /* width: 3.2; */
+    /* height: 100%; */
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}   
 
-
-
+img{
+    width: 50%;
+    height: auto;
+}
 
 
