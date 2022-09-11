@@ -26,7 +26,7 @@ window.addEventListener('load', ()=>{
     let notesPage = document.getElementById('notes-page');
     let startButton = document.getElementById('start-button');
     startButton.addEventListener('click',()=>{
-        //console.log(document.getElementById('input-title').value);
+        console.log(document.getElementById('input-title').value);
         
         if(inputPage.value.length == 0)
          {

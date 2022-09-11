@@ -1,9 +1,36 @@
 body{
     background-color: aliceblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-size: 3.2vw; */
+    /* font-size: 3.2vh; */
+    /* font-size: 3.2vw; */
 }
 
 h1{
     display:flex;
-    justify-content: end;
+    justify-content:space-around;
+    /* font-size: 30px; */
+
+    
 }
+.main{
+    background-color: rgb(255, 255, 0);
+    /* margin: 10%; */
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+.subtitle {
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    text-align: left;
+    background-color: rgba(0, 0, 255, 0.184);
+    text-indent: 30%;
+    padding: 1%;
+}
+
+
+
+
+
