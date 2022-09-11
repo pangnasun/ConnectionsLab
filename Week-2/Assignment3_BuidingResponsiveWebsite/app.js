@@ -40,6 +40,14 @@ window.addEventListener('load', ()=>{
 
     let inputNotes = document.getElementById('input-note');
     inputNotes.addEventListener('change',()=>{
-        
+
     })
+
+    let textarea = document.getElementById("notes-area");
+    textarea.addEventListener("keydown", function (e) {
+    if (e.key == 'Enter') { // keyCode 13 corresponds to the Enter key
+        e.preventDefault(); // prevents inserting linebreak
+        textarea.value = '';
+    }
+    });
 })

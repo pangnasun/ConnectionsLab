@@ -1,34 +1,115 @@
+@font-face{
+    font-family: PassingNotes;
+    src: url(fonts/Passing\ Notes.ttf)
+}
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
 body{
-    background-color: aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     /* font-size: 3.2vw; */
     /* font-size: 3.2vh; */
     /* font-size: 3.2vw; */
+
+    font-size: 18px;
+    font-family: PassingNotes;
 }
 
-h1{
-    display:flex;
-    justify-content:space-around;
-    /* font-size: 30px; */
+.container{
+    width: 100%;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    background-color:#fcfcd4;
+    padding: 15px 10px;
+    justify-content: space-between;
 
+}
+
+.line-wrap{
+    margin-bottom: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+.line-wrap::before{
+    content:"";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color:white;
+
+}
+
+.notes-line{
+    width: 100%;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #dadacc;
+    /* overflow-y: auto;
+    overflow-wrap: break-word; */
+}
+
+.page-line{
+   width: 100%; 
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #dadacc;
+    justify-content: end;
+    /* text-align: right; */
+    float: right;
+   text-indent: 60%;
+}
+.notes-title{
+    width: 100%;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #dadacc;
+}
+
+.display-notes-titles{
+    background-color:#fcfcd4;
+}
+/* */
+textarea {
+    background: url(images/notebook_bg.png) repeat-y;
+    background-size: contain;
+    width: 90%;
+    height: 100px;
+    font: normal 2.2vh verdana;
+    line-height: 3.2vh;
+    padding-left: 9px;
+    padding-top: 7px;
+    padding-right: 30px;
+    border: solid 1px #ddd;
+    resize:  none;
+    background-attachment: local;
+    overflow: auto;
+    /* margin-right: 1; */
+    margin: 5% ;   
     
 }
-.main{
-    background-color: rgb(255, 255, 0);
-    /* margin: 10%; */
-    padding-top: 5%;
-    padding-bottom: 1%;
+input{
+    font-family: 'Dancing Script', cursive;
 }
-.subtitle {
-    display:flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* flex-wrap: wrap; */
-    text-align: left;
-    background-color: rgba(0, 0, 255, 0.184);
-    text-indent: 30%;
-    padding: 1%;
 }
+/* text::after{
+    content:"";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color:white;
+} */
+
 
 
 
