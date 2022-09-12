@@ -27,11 +27,11 @@ I was not quite sure what to include, so designed the most basic wireframe with 
 
 *Initial Webpage Screenshot #1*
 
-![webpage #1]mages/webpage_v1.PNG)
+![webpage #1]9Images/webpage_v1.PNG)
 
 *Initial Webpage Screenshot #2*
 
-![webpage #2](images/webpage_2.PNG)
+![webpage #2](images/webpage_V2.PNG)
 
 
 
