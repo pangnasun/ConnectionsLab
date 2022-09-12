@@ -130,7 +130,7 @@ textarea {
     
 }
 input{
-    font-family: 'Dancing Script', cursive;
+    font-family: passingNotes;
 }
 
 /* text::after{
@@ -192,6 +192,7 @@ input{
 .footer{
     display: flex;
     justify-content: center;
+    
 }
 
 .notes-saved{
@@ -203,3 +204,4 @@ input{
     justify-content: center;
     font-size: larger;
 }
+

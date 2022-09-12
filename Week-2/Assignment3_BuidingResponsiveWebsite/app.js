@@ -1,26 +1,7 @@
 let data = [];
 window.addEventListener('load', ()=>{
-    // let inputTitle = document.getElementById('input-title');
-    // let notesTitle = document.getElementById('notes-title');
-    // inputTitle.addEventListener('input',(e)=>{
-    //     //save title of notes
-    //     console.log(e.target.value);
-       
-    //     notesTitle.innerHTML = e.target.value;
-    //     //inputTitle.value = '';
-    // })
-
-    // let inputPage = document.getElementById('input-page');
-    // inputPage.addEventListener('input',(e)=>{
-    //     //save title of notes
-    //     if(isNaN(e.target.value))
-    //     {
-    //         console.log('not number;')
-    //     }
-    //     //console.log(e.target.value);
-    //     //let listid = e.target.value.replace(/\s/g,'');
-    //     //inputPage.value = '';
-    // })
+   
+    
     let container_div = document.getElementById('container');
     let container2_div =  document.getElementById('container2');
     let lineWrap_div = document.createElement('div');
@@ -30,10 +11,12 @@ window.addEventListener('load', ()=>{
     let inputPage = document.getElementById('input-page');
    // let notesPage = document.getElementById('notes-page');
     let startButton = document.getElementById('start-button');
-
+    let saveTitle = document.getElementById('save-title');
     //new inputs
     let inputNotes = document.createElement('input');
     let updatePage = document.createElement('input');
+    let inst_div = document.createElement('div');
+    let emp_div = document.createElement('div');
 
     //new button
     let doneButton = document.createElement('button');
@@ -58,8 +41,9 @@ window.addEventListener('load', ()=>{
         lineWrap_div.appendChild(notesTitle);
         container_div.appendChild(lineWrap_div);
         notesTitle.innerHTML = inputTitle.value + '              p. ' + inputPage.value;
+        saveTitle.innerHTML = inputTitle.value;
 
-        let emp_div = document.createElement('div');
+        
         emp_div.classList.add('line-wrap');
         let empLine = document.createElement('p');       
         empLine.classList.add('notes-title');
@@ -83,7 +67,7 @@ window.addEventListener('load', ()=>{
         lineWrap_div2.appendChild(updatePage);
         container_div.appendChild(lineWrap_div2);
 
-        let inst_div = document.createElement('div');
+        
         inst_div.classList.add('line-wrap');
         let instLine = document.createElement('p');       
         instLine.classList.add('notes-title');
@@ -104,8 +88,22 @@ window.addEventListener('load', ()=>{
         
     })
 
-    
-    inputNotes.addEventListener('change',()=>{
+    let listTitles = document.getElementById('list');
+    inputNotes.addEventListener('keydown',(e)=>{
+        if(e.key == 'Enter')
+        {
+            console.log('enter');
+            let save_ul = document.createElement('ul');
+            save_ul.classList.add('line-wrap');
+            save_ul.style.listStyle = 'none';
+            let saveLine = document.createElement('li');
+            saveLine.classList.add('notes-title');
+            saveLine.innerHTML = ' p. ' + inputPage.value + inputNotes.value  ;
+            save_ul.appendChild(saveLine);
+            listTitles.appendChild(save_ul);
+            inputNotes.value = '';
+        }
+       
 
     })
 
@@ -113,44 +111,34 @@ window.addEventListener('load', ()=>{
         if(e.code=='Enter')
         {
             notesTitle.innerHTML = inputTitle.value + ' p. ' + updatePage.value;
+            inputPage.value = updatePage.value;
             updatePage.value='';
+
+            if(inputNotes.value.length != 0){
+                let save_ul = document.createElement('ul');
+                save_ul.classList.add('line-wrap');
+                save_ul.style.listStyle = 'none';
+                let saveLine = document.createElement('li');
+                saveLine.classList.add('notes-title');
+                saveLine.innerHTML = ' p. ' + inputPage.value + inputNotes.value;
+                save_ul.appendChild(saveLine);
+                listTitles.appendChild(save_ul);
+                inputNotes.value = '';
+            }
         }
         
     })
 
-    let listTitles = document.getElementById('list');
+    
     doneButton.addEventListener('click', (e)=>{
-        let save_div = document.createElement('div');
-        save_div.classList.add('line-wrap');
-        let saveLine = document.createElement('li');       
-        //saveLine.classList.add('notes-title');
-        saveLine.innerHTML = inputTitle.value;
-        listTitles.appendChild(saveLine);
+        
         notesTitle.parentElement.remove();
-        doneButton.parentElement.remove();
-
-        //new button
-        startButton = document.createElement('button');
-        let start_div = document.createElement('div');
-        start_div.classList.add('m-line-wrap');
-        startButton.id='start-button';
-        startButton.classList.add('start-button');
-        startButton.innerHTML = 'Start taking notes!';
-
-        start_div.appendChild(startButton);
-        container_div.appendChild(start_div);
-        window.location.reload();
-
-        //save_div.appendChild(l);
-        //container2_div.appendChild(save_div);
+        doneButton.parentElement.remove();  
+        inputNotes.parentElement.remove();
+        updatePage.parentElement.remove();
+        inst_div.remove();
+        //emp_div.remove();
     })
-    // let textarea = document.getElementById("notes-area");
-    // textarea.addEventListener("keydown", function (e) {
-    // if (e.key == 'Enter') { // keyCode 13 corresponds to the Enter key
-    //     e.preventDefault(); // prevents inserting linebreak
-    //     textarea.value = '';
-    // }
-    // }); 
 
     let lamp1 = document.getElementById('lamp1');
     let lamp1_0 = document.getElementById('lamp1-0');
