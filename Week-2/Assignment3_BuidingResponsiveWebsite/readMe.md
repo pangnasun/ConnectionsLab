@@ -1,11 +1,14 @@
 # Assignment 3: Building a Responsive Webpage
 
+### Concept
+I wanted to create a responsive webpage that allows users to take and organize notes for different texts. When using this site, users first enter the title and the first page of the text they want to annotate. Then, they can input the note for each page, update the page number, and save it by pressing Enter. When they are done taking notes for one text, all the notes will be saved under a title. They can access and edit the notes by clicking on that title. They can go the same procedure again to take notes for other texts.  
+
 [Preview](https://pangnasun.github.io/ConnectionsLab/Week-2/Assignment3_BuidingResponsiveWebsite/)
 
 ### My Journey
 
 #### Creating Wireframes
-I started the process by creating my two wireframes:
+I started my development process by creating wireframes of my concept:
 
 *Wireframe #1*
 
