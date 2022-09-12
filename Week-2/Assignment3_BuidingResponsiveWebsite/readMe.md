@@ -37,11 +37,11 @@ I was not quite sure what to include, so designed the most basic wireframe with 
 
 *Testing textarea Screenshot #1*
 
-!textarea #1](images/textarea1.PNG)
+![textarea #1](images/textarea1.PNG)
 
 *Testing textarea Screenshot #2*
 
-!textarea #2](images/textarea2.PNG)
+![textarea #2](images/textarea2.PNG)
 
 
 
