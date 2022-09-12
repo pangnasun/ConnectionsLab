@@ -25,7 +25,7 @@ I started the process by creating my two wireframes:
 
 Using the above wireframes, I developed a basic HTML, as shown below:
 
-*Initial Webpage Screenshot *
+*Initial Webpage Screenshot*
 
 ![webpage #1](images/webpage_v1.PNG)
 
