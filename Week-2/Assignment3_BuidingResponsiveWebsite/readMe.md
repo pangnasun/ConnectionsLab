@@ -20,10 +20,10 @@ I started the process by creating my two wireframes:
 
 ![Wireframe #1](images/wireframe4.png)
 
-I was not quite sure what to include, so designed the most basic wireframe with the elements that I know I will need on my webpage. I liked the first wireframe better, so I used it to start my HTML coding. 
 
 #### HTML Coding & CSS Styling
 
+Using the above wireframes, I developed a basic HTML, as shown below:
 
 *Initial Webpage Screenshot *
 
@@ -33,7 +33,7 @@ I was not quite sure what to include, so designed the most basic wireframe with 
 
 ![webcode #2](images/code_v1.PNG)
 
-
+While trying different ways to format and get user input, I tried *textarea* because I wanted the input text to go to new line when it reaches the maximum width of the input field. 
 
 *Testing textarea Screenshot #1*
 
@@ -42,6 +42,12 @@ I was not quite sure what to include, so designed the most basic wireframe with 
 *Testing textarea Screenshot #2*
 
 ![textarea #2](images/textarea2.PNG)
+
+*Testing textarea code Screenshot *
+
+![textareacode #2](images/textareaCode1.PNG)
+
+
 
 
 
