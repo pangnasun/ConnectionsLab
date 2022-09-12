@@ -53,13 +53,6 @@ While trying different ways to format and get user input, I tried *textarea* bec
 
 
 
-
-
-### Javascripit
-
-
-
-
 ### Final Webage
 
 *Final Webpage Screenshot*
