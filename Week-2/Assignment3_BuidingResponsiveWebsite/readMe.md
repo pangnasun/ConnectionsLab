@@ -51,7 +51,12 @@ While trying different ways to format and get user input, I tried *textarea* bec
 
 ![textareacode #2](images/textareaCode1.PNG)
 
+#### Javascript
+I used event listeners line *click*, *change*, *keydown*, etc. to make my webpage responsive and interactive. Then, I removed, created, and HTML elements to transit to different stages of my webpage. 
 
+*Javascript code Screenshot*
+
+![jscode ](images/js_snip.png)
 
 ### Final Webage
 
