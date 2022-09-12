@@ -98,7 +98,7 @@ window.addEventListener('load', ()=>{
             save_ul.style.listStyle = 'none';
             let saveLine = document.createElement('li');
             saveLine.classList.add('notes-title');
-            saveLine.innerHTML = ' p. ' + inputPage.value + inputNotes.value  ;
+            saveLine.innerHTML = ' p. ' + inputPage.value + ' ' + inputNotes.value  ;
             save_ul.appendChild(saveLine);
             listTitles.appendChild(save_ul);
             inputNotes.value = '';
@@ -120,7 +120,7 @@ window.addEventListener('load', ()=>{
                 save_ul.style.listStyle = 'none';
                 let saveLine = document.createElement('li');
                 saveLine.classList.add('notes-title');
-                saveLine.innerHTML = ' p. ' + inputPage.value + inputNotes.value;
+                saveLine.innerHTML = ' p. ' + inputPage.value + ' ' + inputNotes.value;
                 save_ul.appendChild(saveLine);
                 listTitles.appendChild(save_ul);
                 inputNotes.value = '';
