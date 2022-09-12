@@ -1,1 +1,3 @@
-# Assingment 3: Buidling a responsive website
+# Assingment 3: Building a responsive webpage
+
+
