@@ -28,32 +28,53 @@
         <!-- <p id="notes-title">Title Placeholder</p>
         <p id="notes-page">Page # Placeholder</p> -->
     </div>
+    <div class="images">
+        <img  id="lamp1" class="lamp" src="images/lamp_light1.png"/>
+        <img id="lamp1-0" class="lamp" src="images/lamp_light.png"/>
+        <img id="lamp1-1" class="lamp" src="images/lamp_light2.png"/>
+        <img id="lamp2" class="lamp-r" src="images/lamp_light1.png"/>
+        <img id="lamp2-0" class="lamp-r" src="images/lamp_light.png"/>
+        <img id="lamp2-1" class="lamp-r" src="images/lamp_light2.png"/>
 
-    <div class="container">
-        <!-- <div class="images">
-            <img src="images/lamp_w.png"/>
-            <img src="images/light2.png"/>
-        </div> -->
-        <div class="line-wrap">
+    </div>
+    <div id="container" class="container">
+        
+        <div class="m-line-wrap">
             <h1>Welcome to Your Notes</h1>
             
         </div>
-        <section class="line-wrap">
-            <h2>Taking notes has never been easier...</h2>
-            <h2> Take notes anywhere, anytime.</h2>
+        <section class="m-line-wrap">
+            <h3>Taking notes has never been easier...</h2>
+            <!-- <h3> Take notes anywhere, anytime.</h2> -->
         </section>
-        <div class="input-info">
-            <input id="input-title" type="text" placeholder="Enter the title of your notes"/>
-            <input id="input-page" type="number"  placeholder="Enter page number"/>
-            <button id="start-button">Start taking notes!</button>
+        <div class="line-wrap">
+            <p class="notes-title" id="notes-title"> </p>            
         </div>
         <div class="line-wrap">
+            <p class="notes-title" id="notes-title"> </p>            
+        </div>
+        
+
+        <div class="line-wrap">
+            <input class="notes-line" id="input-title" type="text" placeholder="Enter the title of your notes"/>
+            <!-- <input class="notes-line" id="input-page" type="number"  placeholder="Enter page number"/> -->
+            <!-- <button id="start-button">Start taking notes!</button> -->
+        </div>
+        <div class="line-wrap">
+            <input type="number"id="input-page" class="page-line" placeholder="Enter page number"/>
+        </div> 
+        <div class="m-line-wrap">
+           <!-- / <input class="notes-line" id="input-title" type="text" placeholder="Enter the title of your notes"/> -->
+            <!-- <input class="notes-line" id="input-page" type="number"  placeholder="Enter page number"/> -->
+            <button class="start-button" id="start-button">Start taking notes!</button>
+        </div>
+        <!-- <div class="line-wrap">
             <p class="notes-title" id="notes-title">Title Placeholder  Page #</p>
-            <!-- <p id="notes-page">Page # Placeholder</p> -->
+            
         </div>
         <div class="line-wrap">
             <p class="notes-title" id="notes-title">Press Enter so save</p>
-            <!-- <p id="notes-page">Page # Placeholder</p> -->
+            
         </div>
         
         <div class="line-wrap">
@@ -61,28 +82,47 @@
         </div>
         <div class="line-wrap">
             <input type="number" class="page-line" placeholder="Enter page number"/>
-        </div>
+        </div> -->
         <!-- <div class="line-wrap">
             <input type="text" class="line" />
         </div>
         <div class="line-wrap">
             <input type="text" class="line" />
         </div> -->
+        
     </div>
-    <textarea id="notes-area" placeholder="Enter notes here"></textarea>
+
+    <div id ="container2" class="container-2">
+        <!-- <hr> -->
+        <div class="line-wrap">
+            
+            <p class="notes-title" id="notes-title"></p>
+            
+        </div>
+        <div class="line-wrap">
+            <p class="notes-saved" id="notes-title">Saved Notes Titles</p>
+            
+        </div>
+        <div class="line-wrap">
+            <ul class="notes-title" id="list">
+                <!-- <li>Notes Title</li> -->
+                
+            </ul>
+        </div>
+        <div class="line-wrap">
+            
+            <p class="notes-title" id="notes-title"></p>
+            
+        </div>
+    </div>
+    <!-- <textarea id="notes-area" placeholder="Enter notes here"></textarea>
 
     <div class="input-notes">
         <input id="input-note" type="text" placeholder="Enter your notes here"/>
         <input id="update-page" type="number"  placeholder="Update page number"/>
         <button>Save</button>
-    </div>
-    <hr>
-    <div>
-        <ul class="list" id="list">
-            <li><a href=>Saved Notes Title</a></li>
-            <li><a href=>Saved Notes Title 2</a></li>
-        </ul>
-    </div>
+    </div> -->
+    
 
     <div class="footer">
         <p> Copyright @PangnaSun</p>

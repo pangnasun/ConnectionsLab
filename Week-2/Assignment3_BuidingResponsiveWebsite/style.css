@@ -20,22 +20,51 @@ body{
 }
 
 .container{
-    width: 90%;
+    /* width: 90%; */
     /* margin: 0 auto; */
     display: flex;
     flex-direction: column;
     background-color:#fcfcd4;
     padding: 15px 10px;
     justify-content: center;
-    margin: 5%;
+    margin: 15% 15% 0% 15%;
 
 }
 
+.container-2{
+    /* width: 90%; */
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    background-color:#fcfcd4;
+    padding: 15px 10px;
+    justify-content: center;
+    margin: 0% 15% 15% 15%;
+
+}
+.m-line-wrap{
+    margin-bottom: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    justify-content: center;
+}
+.m-line-wrap::before{
+    content:"";
+   /* display: inline-block; */
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    /* border-radius: 50%; */
+    /* background-color:white; */
+
+}
 .line-wrap{
     margin-bottom: 10px;
     display: flex;
     /* justify-content: space-between; */
     width: 100%;
+    justify-content: center;
 }
 
 .line-wrap::before{
@@ -59,14 +88,14 @@ body{
 }
 
 .page-line{
-   width: 100%; 
+    width: 100%; 
     background-color: transparent;
     border:none;
     border-bottom: 1px solid #dadacc;
     justify-content: end;
     /* text-align: right; */
     float: right;
-   text-indent: 60%;
+    text-indent: 60%;
    
 }
 .notes-title{
@@ -84,7 +113,7 @@ textarea {
     background: url(images/notebook_bg.png) repeat-y;
     background-size: contain;
     width: 90%;
-    height: 100px;
+    height: auto;
     font: normal 2.2vh verdana;
     line-height: 3.2vh;
     padding-left: 9px;
@@ -95,7 +124,9 @@ textarea {
     background-attachment: local;
     overflow: auto;
     /* margin-right: 1; */
-    margin: 5% ;   
+    margin: 5% ;  
+   
+     
     
 }
 input{
@@ -112,17 +143,63 @@ input{
     background-color:white;
 } */
 
-.images{
-    /* width: 3.2; */
+/* .images{
+    width: 50%; 
     /* height: 100%; */
-    position: absolute;
-    top: 10%;
-    left: 0%;
-}   
+   
+    
+/* }    */ 
 
-img{
-    width: 50%;
-    height: auto;
+/* img{
+    width: 30%;
+    height: aut0;
+} */
+
+.lamp-r{
+    width: 60%;
+    position: fixed;
+    top: 0%;
+    left: 40%;
+    transform: scaleX(-1);
+    pointer-events: none;
+    opacity: 90%;
 }
 
+.lamp{
+    width: 60%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    pointer-events: none;
+    opacity: 90%;
+    
+}
+.start-button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:inherit;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: PassingNotes;
+    width:90%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
 
+.notes-saved{
+    width: 100%;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #dadacc;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
