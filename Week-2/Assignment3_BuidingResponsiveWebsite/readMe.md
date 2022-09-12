@@ -25,19 +25,23 @@ I was not quite sure what to include, so designed the most basic wireframe with 
 #### HTML Coding & CSS Styling
 
 
-*Initial Webpage Screenshot #1*
+*Initial Webpage Screenshot *
 
 ![webpage #1](images/webpage_v1.PNG)
 
-*Initial Webpage Screenshot #2*
+*Initial HTML code Screenshot *
 
-![webpage #2](images/code_v1.PNG)
+![webcode #2](images/code_v1.PNG)
 
 
 
-*Initial Webpage Screenshot #3*
+*Testing textarea Screenshot #1*
 
-![webpage #3](ScreenShots/webpage_3.png)
+!textarea #1](images/textarea1.PNG)
+
+*Testing textarea Screenshot #2*
+
+!textarea #2](images/textarea2.PNG)
 
 
 
