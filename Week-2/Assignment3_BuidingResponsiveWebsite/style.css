@@ -130,30 +130,9 @@ textarea {
     
 }
 input{
-    font-family: passingNotes;
+    font-family: PassingNotes;
 }
 
-/* text::after{
-    content:"";
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin-left: 10px;
-    border-radius: 50%;
-    background-color:white;
-} */
-
-/* .images{
-    width: 50%; 
-    /* height: 100%; */
-   
-    
-/* }    */ 
-
-/* img{
-    width: 30%;
-    height: aut0;
-} */
 
 .lamp-r{
     width: 60%;
@@ -192,6 +171,7 @@ input{
 .footer{
     display: flex;
     justify-content: center;
+    
     
 }
 
