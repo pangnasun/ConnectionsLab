@@ -25,7 +25,7 @@ I started the process by creating my two wireframes:
 
 Using the above wireframes, I developed a basic HTML, as shown below:
 
-*Initial Webpage Screenshot *
+*Initial Webpage Screenshot*
 
 ![webpage #1](images/webpage_v1.PNG)
 
@@ -34,6 +34,7 @@ Using the above wireframes, I developed a basic HTML, as shown below:
 ![webcode #2](images/code_v1.PNG)
 
 While trying different ways to format and get user input, I tried *textarea* because I wanted the input text to go to new line when it reaches the maximum width of the input field. I also added a png of notebook page as the background, so I can duplicate the notebook effect as users inputing text. However, I faced the problem of the background image and input text size do not scale at the same proportion when the screen changes sizes. The isssue is shown below:
+
 
 *Testing textarea Screenshot #1*
 
