@@ -29,7 +29,7 @@ Using the above wireframes, I developed a basic HTML, as shown below:
 
 ![webpage #1](images/webpage_v1.PNG)
 
-*Initial HTML code Screenshot *
+*Initial HTML code Screenshot*
 
 ![webcode #2](images/code_v1.PNG)
 
@@ -43,7 +43,7 @@ While trying different ways to format and get user input, I tried *textarea* bec
 
 ![textarea #2](images/textarea2.PNG)
 
-*Testing textarea code Screenshot *
+*Testing textarea code Screenshot*
 
 ![textareacode #2](images/textareaCode1.PNG)
 
