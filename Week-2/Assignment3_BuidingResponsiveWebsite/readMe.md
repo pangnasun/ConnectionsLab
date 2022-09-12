@@ -9,16 +9,16 @@ I started the process by creating my two wireframes:
 
 *Wireframe #1*
 
-![Wireframe #1](wireframes/wireframe2.png)
+![Wireframe #1](images/wireframe2.png)
 
 
 *Wireframe #2*
 
-![Wireframe #1](wireframes/Wireframe3.png)
+![Wireframe #1](imagess/Wireframe3.png)
 
 *Wireframe #3*
 
-![Wireframe #1](wireframes/Wireframe4.png)
+![Wireframe #1](imagess/Wireframe4.png)
 
 I was not quite sure what to include, so designed the most basic wireframe with the elements that I know I will need on my webpage. I liked the first wireframe better, so I used it to start my HTML coding. 
 
