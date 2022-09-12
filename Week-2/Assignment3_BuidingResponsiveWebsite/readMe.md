@@ -31,7 +31,7 @@ I was not quite sure what to include, so designed the most basic wireframe with 
 
 *Initial Webpage Screenshot #2*
 
-![webpage #2](images/webpage_v2.PNG)
+![webpage #2](images/code_v1.PNG)
 
 
 
