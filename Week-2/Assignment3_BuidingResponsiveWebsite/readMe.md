@@ -55,9 +55,12 @@ While trying different ways to format and get user input, I tried *textarea* bec
 ### Javascripit
 
 
-*Final Webpage Screenshot*
 
-![webpage #4](ScreenShots/webpage_4.png)
 
 ### Final Webage
+
+*Final Webpage Screenshot*
+
+![webpage #4](images/finalWebpage.png)
+
 Pleae refer to this [link](https://pangnasun.github.io/ConnectionsLab/Week-2/Assignment3_BuidingResponsiveWebsite/)
