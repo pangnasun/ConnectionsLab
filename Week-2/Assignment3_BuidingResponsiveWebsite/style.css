@@ -93,9 +93,9 @@ body{
     border:none;
     border-bottom: 1px solid #dadacc;
     justify-content: end;
-    /* text-align: right; */
+    text-align: right;
     float: right;
-    text-indent: 60%;
+    /* text-indent: 60%; */
    
 }
 .notes-title{
@@ -131,6 +131,7 @@ textarea {
 }
 input{
     font-family: PassingNotes;
+    font-size: inherit;
 }
 
 
@@ -141,7 +142,7 @@ input{
     left: 40%;
     transform: scaleX(-1);
     pointer-events: none;
-    opacity: 90%;
+    /* opacity: 90%; */
 }
 
 .lamp{
@@ -150,7 +151,7 @@ input{
     top: 0%;
     left: 0%;
     pointer-events: none;
-    opacity: 90%;
+    /* opacity: 90%; */
     
 }
 .start-button{
@@ -172,6 +173,7 @@ input{
     display: flex;
     justify-content: center;
     
+    
 }
 
 .notes-saved{
@@ -184,3 +186,35 @@ input{
     font-size: larger;
 }
 
+.save-line-wrap{
+    margin-bottom: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    justify-content: center;
+        
+}
+
+.save-line-wrap::before{
+    content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background-color: white;
+}
+
+.notes-list{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #dadacc;
+    text-indent: 20px;
+    font-size: smaller;
+}
+
+#notes-container{
+    display: none;
+
+}

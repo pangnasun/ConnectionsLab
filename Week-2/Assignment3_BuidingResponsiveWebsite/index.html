@@ -15,12 +15,15 @@
         
     </div>
     <div class="images">
-        <img  id="lamp1" class="lamp" src="images/lamp_light1.png"/>
-        <img id="lamp1-0" class="lamp" src="images/lamp_light.png"/>
-        <img id="lamp1-1" class="lamp" src="images/lamp_light2.png"/>
-        <img id="lamp2" class="lamp-r" src="images/lamp_light1.png"/>
-        <img id="lamp2-0" class="lamp-r" src="images/lamp_light.png"/>
-        <img id="lamp2-1" class="lamp-r" src="images/lamp_light2.png"/>
+        <img  id="lamp1" class="lamp" src="images/lamps/off_lamp.png"/>
+        <img id="lamp1-0" class="lamp" src="images/lamps/yellow_lamp.png"/>
+        <img id="lamp1-1" class="lamp" src="images/lamps/white_lamp.png"/>
+        <img id="lamp1-2" class="lamp" src="images/lamps/blue_lamp.png" />
+        <!-- right lamp -->
+        <img id="lamp2" class="lamp-r" src="images/lamps/off_lamp.png"/>
+        <img id="lamp2-0" class="lamp-r" src="images/lamps/yellow_lamp.png"/>
+        <img id="lamp2-1" class="lamp-r" src="images/lamps/white_lamp.png"/>
+        <img id="lamp2-2" class="lamp-r" src="images/lamps/blue_lamp.png" />
 
     </div>
     <div id="container" class="container">
@@ -34,10 +37,10 @@
             
         </section>
         <div class="line-wrap">
-            <p class="notes-title" id="notes-title"> </p>            
+            <p class="notes-title" id="empLine-1"> </p>            
         </div>
         <div class="line-wrap">
-            <p class="notes-title" id="notes-title"> </p>            
+            <p class="notes-title" id="empLine-2"> </p>            
         </div>
         
 
@@ -58,23 +61,38 @@
 
     <div id ="container2" class="container-2">
         <!-- <hr> -->
-        <div class="line-wrap">
-            
-            <p class="notes-title" id="notes-title"></p>
-            
+        <div class="line-wrap">            
+            <p class="notes-title" id="empLine-3"></p>            
         </div>
-        <div class="line-wrap">
-            <p class="notes-saved" id="save-title"></p>
+
+        
+        <div id="notes-container">
+            <div class="line-wrap">
+                <p id="save-title" class="notes-saved">Saved Note Titles</p>
+            </div>
             
+            <div id="list">
+            
+            </div>
+            <div class="line-wrap">
+                <p class="notes-title"></p>
+            </div>           
+           
         </div>
-        <div  id="list">
-            
+
+        <div id="titles-container">
+            <!-- sample div format -->
+            <!-- <div id="each-title">
+                <div class="line-wrap">
+                    <p class="notes-title"></p>
+                </div>
+                
+                <div class="line-wrap">
+                    <p class="notes-list"></p>
+                </div>
+            </div> -->
         </div>
-        <div class="line-wrap">
-            
-            <p class="notes-title" id="notes-title"></p>
-            
-        </div>
+        
     </div>   
     
 
