@@ -10,7 +10,7 @@ My webpage will use p5js to create an interactive map that users can click on ea
 
 ### Progress
 #### Prototype wireframe
-[wireframe](images/wireframe_p1.png)
+![wireframe](images/wireframe_p1.png)
 
 #### Working with *json* dataset
 
