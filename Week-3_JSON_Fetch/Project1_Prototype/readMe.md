@@ -11,4 +11,35 @@ My webpage will use p5js to create an interactive map that users can click on ea
 ### Progress
 #### Working with *json* dataset
 
+'''
+fetch('forest_area.json')    
+    .then(response => response.json())
+    .then(data => { 
+
+        let areaArr = data;      
+        let inputCountry = document.getElementById('input-country');
+        let searchButton = document.getElementById('search-button');
+        inputCountry.addEventListener('keydown',(e) =>{
+            //console.log('input');
+            if(e.key == 'Enter')
+            {
+                searchCountry(areaArr, inputCountry.value,listInfo);
+                inputCountry.value = '';
+            }
+           
+        }) 
+
+        searchButton.addEventListener('click', ()=>{
+            searchCountry(areaArr, inputCountry.value,listInfo);
+            inputCountry.value = '';
+        })
+
+        
+
+    })
+    .catch(function (e) {  //if pomised is rejected
+        console.log('error', e);
+    })
+
+'''
 
