@@ -12,7 +12,7 @@ My webpage will use p5js to create an interactive map that users can click on ea
 #### Working with *json* dataset
 
 '''
-fetch('forest_area.json')    
+    fetch('forest_area.json')    
     .then(response => response.json())
     .then(data => { 
 
