@@ -77,5 +77,8 @@ I started my prototype by working with a *json* dataset of the world's forest ar
 
 ```
 #### Working with *p5js* in HTML
-I am not familiar with integrating *p5js* in HTML, so I spent a significant amount of time learning about this. One of the things that I focused on was how to create interactive map with *p5js*. I watched a [tutorial](https://www.youtube.com/watch?v=ZiYdOwOrGyc) of how to plot data represetnation on a map based on latitudes and longitudes. I also read documentations on [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/guides/) and [Mapbox](https://docs.mapbox.com/mapbox.js/api/v3.0.1/).
+I am not familiar with integrating *p5js* in HTML, so I spent a significant amount of time learning about this. One of the things that I focused on was how to create interactive map with *p5js*. I watched a [tutorial](https://www.youtube.com/watch?v=ZiYdOwOrGyc) of how to plot data represetnation on a map based on latitudes and longitudes. I also read documentations on [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/guides/) and [Mapbox](https://docs.mapbox.com/mapbox.js/api/v3.0.1/). Thus, my next step is to create a prototype of an interactive map using *p5js*.
+
+*Sample p5js map tutorial*
+![tutorial](imagaes/tutorial.png)
 
