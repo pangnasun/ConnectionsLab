@@ -8,3 +8,7 @@ My first project will be a webpage that displays the world’s forest area over 
 
 My webpage will use p5js to create an interactive map that users can click on each country and get information about that country’s forest area over the years. Users will also be able to change the years (1990-2020) to see how the world’s forest area changes from one year to another. In term of data, I will use two json datasets: one for the world’s forest area and another for each country’s latitude and longitude. 
 
+### Progress
+#### Working with *json* dataset
+
+
