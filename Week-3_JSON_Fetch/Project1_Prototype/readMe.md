@@ -11,7 +11,10 @@ My webpage will use p5js to create an interactive map that users can click on ea
 ### Progress
 #### Working with *json* dataset
 
+I started my prototype by working with a *json* dataset of the world's forest area. 
+
 ```
+    //fetching json file
     fetch('forest_area.json')    
     .then(response => response.json())
     .then(data => { 
@@ -40,6 +43,33 @@ My webpage will use p5js to create an interactive map that users can click on ea
     .catch(function (e) {  //if pomised is rejected
         console.log('error', e);
     })
+    
+    //function to use the data
+    function searchCountry(arr, inCountry, listInfo) 
+    {
+        let properCaseName = toTitleCase(inCountry);
+        let index = arr.findIndex(country => country.Entity == properCaseName);
+        //console.log(arr[startIndex]);
+        // console.log(arr);
+        listInfo.innerHTML = '';
+        listInfo.style.display = 'inline';
+        let lis = document.createElement('p');
+        if(index == -1) {
+            lis.innerHTML = inCountry + ' is not a valid country. Pls try again.';
+            listInfo.appendChild(lis);
+            return;
+        }
+        lis.innerHTML = properCaseName  + '\'s Forest Area' ;
+        listInfo.appendChild(lis);
+
+        while (arr[index].Entity == properCaseName) {
+            //console.log(arr[index]);
+            let lis = document.createElement('li');
+            lis.innerHTML = arr[index].Year + ': ' + arr[index]['Forest area'] + ' hectares';
+            listInfo.appendChild(lis);
+            index++;
+        }
+    }
 
 ```
 
