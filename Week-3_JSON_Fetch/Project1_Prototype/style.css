@@ -1,0 +1,31 @@
+body{
+    font-family: Lato;
+    background-color:rgb(167, 201, 231);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5%;
+    background-color: aqua;
+    width: 70%;
+    
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.display-info{
+    
+    display: flex;
+    justify-content: left;
+    background-color: bisque;
+    width: 85%;
+    margin: auto;
+    padding-left: 3%;
+}
+
