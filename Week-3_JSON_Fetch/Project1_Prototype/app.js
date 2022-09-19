@@ -6,10 +6,8 @@ window.addEventListener('load', ()=>{
     fetch('forest_area.json')    
     .then(response => response.json())
     .then(data => { 
-        //console.log(data); 
-        let areaArr = data;      
-        // console.log(areaArr.findIndex(ele => ele.Code == 'BEL'));
 
+        let areaArr = data;      
         let inputCountry = document.getElementById('input-country');
         let searchButton = document.getElementById('search-button');
         inputCountry.addEventListener('keydown',(e) =>{
@@ -38,21 +36,22 @@ window.addEventListener('load', ()=>{
     
 })
 
-function searchCountry(arr, inCountry, listInfo) {
-
+function searchCountry(arr, inCountry, listInfo)
+ {
     let properCaseName = toTitleCase(inCountry);
     let index = arr.findIndex(country => country.Entity == properCaseName);
     //console.log(arr[startIndex]);
     // console.log(arr);
     listInfo.innerHTML = '';
     listInfo.style.display = 'inline';
+    let lis = document.createElement('p');
     if(index == -1) {
-        let lis = document.createElement('p');
         lis.innerHTML = inCountry + ' is not a valid country. Pls try again.';
         listInfo.appendChild(lis);
         return;
     }
-    
+    lis.innerHTML = properCaseName  + '\'s Forest Area' ;
+    listInfo.appendChild(lis);
     
     while (arr[index].Entity == properCaseName) {
         //console.log(arr[index]);
