@@ -14,7 +14,7 @@ My webpage will use p5js to create an interactive map that users can click on ea
 
 #### Working with *json* dataset
 
-I started my prototype by working with a *json* dataset of the world's forest area. I successfully fetched the *json* file in *javascript* and stored the data in an array. I also created a function that takes in the data array, a country name, and a *ul* element as the function's parameters. The goal of this function is to search the name of the country within the array data and display the country's forest area over the years. If the function cannot find the input country name, it will return an error.
+I started my prototype by working with a *json* dataset of the world's forest area. I successfully fetched the *json* file in *javascript* and stored the data in an array. I also created a function that takes in the data array, a country name, and a *ul* element as the function's parameters. The goal of this function is to search the name of the country within the array data and display the country's forest area over the years. If the function cannot find the input country name, it will return an error. With this function, I was able to obtain the needed information. This will come in handy when I need to display this information on the map.
 
 ```
     //fetching json file
@@ -76,4 +76,6 @@ I started my prototype by working with a *json* dataset of the world's forest ar
     }
 
 ```
+#### Working with *p5js* in HTML
+I am not familiar with integrating *p5js* in HTML, so I spent a significant amount of time learning about this. One of the things that I focused on was how to create interactive map with *p5js*. I watched a [tutorial](https://www.youtube.com/watch?v=ZiYdOwOrGyc) of how to plot data represetnation on a map based on latitudes and longitudes. I also read documentations on [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/guides/) and [Mapbox](https://docs.mapbox.com/mapbox.js/api/v3.0.1/).
 
