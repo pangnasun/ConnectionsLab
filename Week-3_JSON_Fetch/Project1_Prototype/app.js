@@ -3,7 +3,8 @@ window.addEventListener('load', ()=>{
     let listInfo = document.getElementById('list-info');
     listInfo.style.display = 'none';
     //acessing data
-    fetch('forest_area.json')    
+   // fetch('forest_area.json')    
+    fetch('https://sheetdb.io/api/v1/yobjwc36o8crm')
     .then(response => response.json())
     .then(data => { 
 
