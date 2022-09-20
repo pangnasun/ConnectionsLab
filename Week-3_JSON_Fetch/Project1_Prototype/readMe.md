@@ -18,7 +18,8 @@ I started my prototype by working with a *json* dataset of the world's forest ar
 
 ```
     //fetching json file
-    fetch('forest_area.json')    
+    //fetch('forest_area.json') 
+    fetch('https://sheetdb.io/api/v1/yobjwc36o8crm')
     .then(response => response.json())
     .then(data => { 
 
