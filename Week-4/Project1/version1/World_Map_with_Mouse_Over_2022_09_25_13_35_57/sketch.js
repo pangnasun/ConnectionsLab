@@ -1,7 +1,8 @@
-const size = 0.7;
+//let size = 0.6;
 let countryPolygons = [];
+let erased = false;
 
-function convertPathToPolygons(path) {
+function convertPathToPolygons(path, size) {
   let coord_point = [0, 0];
   let polygons = [];
   let currentPolygon = [];
@@ -51,19 +52,27 @@ function detectCollision(polygon, x, y) {
 }
 
 function setup() {
-  createCanvas(innerWidth, innerHeight);
-
+  createCanvas(windowWidth, windowHeight);
+  console.log(windowWidth);
+  let size;
+  if(windowWidth / windowHeight > 2.304){
+    size = windowHeight * 0.0010368;
+  }else{
+    size = windowWidth * 0.00045;
+  }
+  
   for (let i = 0; i < country.length; i++) {
     countryPolygons.push(convertPathToPolygons(
-      country[i].vertexPoint
+      country[i].vertexPoint,size
     ));
   }
 }
 
 function draw() {
-  background(255);
+  background(153,234,255); 
+ // textSize(32);
   stroke(255);
-  strokeWeight(1);
+  strokeWeight(0.1);
   let collision = false;
   for (let i = 0; i < countryPolygons.length; i++) {
     fill(100);
@@ -84,4 +93,29 @@ function draw() {
       if(collision) text('countryname',mouseX,mouseY);
     }
   }
+  // clear();
+  //erase();
+  
+  
+  
+  
 }
+
+function windowResized(){
+  // clear();
+  countryPolygons = [];
+  resizeCanvas(windowWidth, windowHeight);
+  let size;
+  if(windowWidth / windowHeight > 2.304){
+    size = windowHeight * 0.0010368;
+  }else{
+    size = windowWidth * 0.00045;
+  }
+  for (let i = 0; i < country.length; i++) {
+    countryPolygons.push(convertPathToPolygons(
+      country[i].vertexPoint,size
+    ));
+  }
+  
+}
+
