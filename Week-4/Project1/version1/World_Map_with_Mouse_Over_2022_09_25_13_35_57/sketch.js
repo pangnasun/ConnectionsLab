@@ -1,5 +1,24 @@
+let areaArr;
+let readyData = false;
+window.addEventListener('load',()=>{
+  fetch('https://sheetdb.io/api/v1/yobjwc36o8crm')
+  .then(response => response.json())
+  .then(data => { 
+
+      areaArr = data;      
+      readyData = true;
+      // searchCountry(areaArr,'Cambodia');
+      
+
+  })
+  .catch(function (e) {  //if pomised is rejected
+      console.log('error', e);
+  })
+})
+
 //let size = 0.6;
 let countryPolygons = [];
+let countries = [];
 let erased = false;
 
 function convertPathToPolygons(path, size) {
@@ -65,11 +84,18 @@ function setup() {
     countryPolygons.push(convertPathToPolygons(
       country[i].vertexPoint,size
     ));
+    countries.push(country[i].name);
   }
+  for(let i = 0; i <countries.length; i++){
+    console.log(countries[i]);
+  }
+  
+  
 }
 
 function draw() {
   background(153,234,255); 
+  // if(readyData)searchCountry(areaArr,'Cambodia');
  // textSize(32);
   stroke(255);
   strokeWeight(0.1);
@@ -79,8 +105,15 @@ function draw() {
     if (!collision && mouseIsPressed) {
       collision = countryPolygons[i].some(poly => detectCollision(poly, mouseX, mouseY));
       if (collision) {
+        fill('black');
+        console.log(countries[i]);
+        if(readyData)
+        {
+          text(searchCountry(areaArr,countries[i]),mouseX,mouseY);
+          //text(countries[i],mouseX,mouseY);
+          // console.log(countries[i]);
+        }
         fill('green');
-       
       }
     }
     
@@ -90,8 +123,17 @@ function draw() {
         vertex(...vert);
       }
       endShape();
-      if(collision) text('countryname',mouseX,mouseY);
+      if(collision) {
+        // if(readyData)
+        // {
+        //   text(searchCountry(areaArr,'Cambodia'),mouseX,mouseY);
+        //   //text(countries[i],mouseX,mouseY);
+        //   // console.log(countries[i]);
+        // }
+      }
     }
+
+    
   }
   // clear();
   //erase();
@@ -117,5 +159,27 @@ function windowResized(){
     ));
   }
   
+}
+
+function searchCountry(arr, inCountry)
+ {
+    
+    let index = arr.findIndex(country => country.Entity == inCountry);
+    //console.log(arr[startIndex]);
+    // console.log(arr);
+    
+   
+    if(index == -1) {
+        return;
+    }
+    let info = inCountry;
+    while (arr[index].Entity == inCountry) {
+        //console.log(arr[index]);
+        info = info + '\n' + arr[index].Year + ': ' + arr[index]['Forest area'] + ' hectares';
+        
+        index++;
+    }
+    //onsole.log(info);
+    return info;
 }
 
