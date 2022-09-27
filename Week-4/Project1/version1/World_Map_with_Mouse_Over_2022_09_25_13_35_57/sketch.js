@@ -5,9 +5,10 @@ window.addEventListener('load',()=>{
   .then(response => response.json())
   .then(data => { 
 
-      areaArr = data;      
+      areaArr = data;  
+      // console.log(data);
       readyData = true;
-      // searchCountry(areaArr,'Cambodia');
+      console.log(searchCountry(areaArr,'Zimbabwe'));
       
 
   })
@@ -78,6 +79,7 @@ function setup() {
     size = windowHeight * 0.0010368;
   }else{
     size = windowWidth * 0.00045;
+    // size = windowWidth * 0.00145;
   }
   
   for (let i = 0; i < country.length; i++) {
@@ -86,33 +88,52 @@ function setup() {
     ));
     countries.push(country[i].name);
   }
-  for(let i = 0; i <countries.length; i++){
-    console.log(countries[i]);
-  }
+  // for(let i = 0; i <countries.length; i++){
+  //   console.log(countries[i]);
+  // }
   
   
 }
 
+let nScale = 1;
 function draw() {
+  scale(nScale);
   background(153,234,255); 
   // if(readyData)searchCountry(areaArr,'Cambodia');
  // textSize(32);
   stroke(255);
   strokeWeight(0.1);
   let collision = false;
+
+  /// draw canada
+  mode(CENTER);
+  let index = countries.findIndex(country => country == "Cambodia");
+  console.log(index);
+  translate(0, -50);
+  for (const poly of countryPolygons[index]) {
+    beginShape();
+    for (const vert of poly) {
+      //console.log(...vert);
+      vertex(...vert);
+    }
+    endShape();
+    if(collision) {
+      // if(readyData)
+      // {
+      //   text(searchCountry(areaArr,'Cambodia'),mouseX,mouseY);
+      //   //text(countries[i],mouseX,mouseY);
+      //   // console.log(countries[i]);
+      // }
+    }
+  }
+
+  /*
   for (let i = 0; i < countryPolygons.length; i++) {
     fill(100);
     if (!collision && mouseIsPressed) {
       collision = countryPolygons[i].some(poly => detectCollision(poly, mouseX, mouseY));
       if (collision) {
-        fill('black');
-        console.log(countries[i]);
-        if(readyData)
-        {
-          text(searchCountry(areaArr,countries[i]),mouseX,mouseY);
-          //text(countries[i],mouseX,mouseY);
-          // console.log(countries[i]);
-        }
+        
         fill('green');
       }
     }
@@ -132,12 +153,31 @@ function draw() {
         // }
       }
     }
+    collision = false;
+    if (!collision && mouseIsPressed) {
+      collision = countryPolygons[i].some(poly => detectCollision(poly, mouseX, mouseY));
+      if (collision) {
+        fill('black');
+        // console.log(countries[i]);
+        if(readyData)
+        {
+          text(searchCountry(areaArr,countries[i]),mouseX,mouseY);
+          //text(countries[i],mouseX,mouseY);
+          // console.log(countries[i]);
+        }
+        //fill('green');
+      }
+    }
 
     
   }
+  */
   // clear();
   //erase();
-  
+  if(mouseIsPressed){
+    nScale += 0.1;
+    //clear();
+  }
   
   
   
@@ -161,6 +201,8 @@ function windowResized(){
   
 }
 
+
+
 function searchCountry(arr, inCountry)
  {
     
@@ -168,12 +210,13 @@ function searchCountry(arr, inCountry)
     //console.log(arr[startIndex]);
     // console.log(arr);
     
-   
+   console.log(inCountry);
     if(index == -1) {
         return;
     }
+    console.log(arr[index].Entity);
     let info = inCountry;
-    while (arr[index].Entity == inCountry) {
+    while (arr[index] != null && arr[index].Entity == inCountry) {
         //console.log(arr[index]);
         info = info + '\n' + arr[index].Year + ': ' + arr[index]['Forest area'] + ' hectares';
         
