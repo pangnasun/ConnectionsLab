@@ -8,7 +8,7 @@ window.addEventListener('load',()=>{
       areaArr = data;  
       // console.log(data);
       readyData = true;
-      console.log(searchCountry(areaArr,'Zimbabwe'));
+      // console.log(searchCountry(areaArr,'Zimbabwe'));
       
 
   })
@@ -23,6 +23,8 @@ let countries = [];
 let erased = false;
 
 function convertPathToPolygons(path, size) {
+  
+  
   let coord_point = [0, 0];
   let polygons = [];
   let currentPolygon = [];
@@ -30,8 +32,14 @@ function convertPathToPolygons(path, size) {
   //For loop para calcular os pontos do vertex
   for (const node of path) {
     if (node[0] == "m") {
-      coord_point[0] += node[1] * size;
-      coord_point[1] += node[2] * size;
+      let xc = windowWidth/2 - node[1];
+      // console.log(windowWidth/);
+      // console.log(xc);
+       let yc = windowHeight/2 - node[2];
+      coord_point[0] += (node[1] ) * size ;
+      // coord_point[0] += 5;
+      coord_point[1] += (node[2]  ) * size  ;
+      // coord_point[1] += 5;
       currentPolygon = [];
     } else if (node[0] == "M") {
       coord_point[0] = node[1] * size;
@@ -49,6 +57,8 @@ function convertPathToPolygons(path, size) {
   
   return polygons;
 }
+
+
 
 function detectCollision(polygon, x, y) {
   let c = false;
@@ -71,9 +81,10 @@ function detectCollision(polygon, x, y) {
   return c;
 }
 
+let size2; //= windowWidth * 0.00045;
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  console.log(windowWidth);
+  // console.log(windowWidth);
   let size;
   if(windowWidth / windowHeight > 2.304){
     size = windowHeight * 0.0010368;
@@ -91,13 +102,14 @@ function setup() {
   // for(let i = 0; i <countries.length; i++){
   //   console.log(countries[i]);
   // }
-  
+  size2 = windowWidth * 0.00045;
   
 }
 
 let nScale = 1;
+
 function draw() {
-  scale(nScale);
+  // scale(nScale);
   background(153,234,255); 
   // if(readyData)searchCountry(areaArr,'Cambodia');
  // textSize(32);
@@ -106,15 +118,35 @@ function draw() {
   let collision = false;
 
   /// draw canada
-  mode(CENTER);
-  let index = countries.findIndex(country => country == "Cambodia");
-  console.log(index);
-  translate(0, -50);
+  let index = countries.findIndex(country => country == "Belgium");
+  // console.log(index);
+  
+  // translate(window,10);
+  // translate(61,61);
+  let j = 0;
+  // console.log(countryPolygons[index]);
+  // translate(windowWidth/2, wind)
+
+  translate(windowWidth/2, windowHeight/2);
+  nScale(nScale);
+  translate(-windowWidth/2, -windowHeight/2);
+  translate();
+  let xc = windowWidth/2- countryPolygons[index][0][0][0];
+      let yc = windowHeight/2 - countryPolygons[index][0][0][1];
   for (const poly of countryPolygons[index]) {
+    // console.log('test',poly[0][0]);
+    // console.log('info',poly);
+    
+      // j++;
     beginShape();
     for (const vert of poly) {
       //console.log(...vert);
-      vertex(...vert);
+      // console.log(vert[0]);
+      // vertex(...vert);
+      
+      // console.log(vert[0] + xc,vert[1] + yc);
+      vertex(vert[0] +xc ,vert[1] + yc );
+      // text(vert[0],vert[0],vert[1]);
     }
     endShape();
     if(collision) {
@@ -175,7 +207,24 @@ function draw() {
   // clear();
   //erase();
   if(mouseIsPressed){
+    // translate(windowWidth/2, windowHeight/2);
     nScale += 0.1;
+    let size;
+  if(windowWidth / windowHeight > 2.304){
+    size = windowHeight * 0.0010368;
+  }else{
+    // size = windowWidth * 0.00045;
+    // size = windowWidth * 0.00145;
+    size2 += 0.01;
+    console.log(size2);
+  }
+  // countryPolygons = [];   
+  // for (let i = 0; i < country.length; i++) {
+  //   countryPolygons.push(convertPathToPolygons(
+  //     country[i].vertexPoint,size2
+  //   ));
+  //   countries.push(country[i].name);
+  // }
     //clear();
   }
   
@@ -210,11 +259,11 @@ function searchCountry(arr, inCountry)
     //console.log(arr[startIndex]);
     // console.log(arr);
     
-   console.log(inCountry);
+  //  console.log(inCountry);
     if(index == -1) {
         return;
     }
-    console.log(arr[index].Entity);
+    // console.log(arr[index].Entity);
     let info = inCountry;
     while (arr[index] != null && arr[index].Entity == inCountry) {
         //console.log(arr[index]);
