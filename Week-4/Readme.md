@@ -77,6 +77,8 @@ I started my prototype by working with a *json* dataset of the world's forest ar
     }
 
 ```
+*Displaying Data*
+![screenshot](Project1/images/json_screenshot.png)
 
 #### Working with P5js
 
