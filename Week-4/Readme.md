@@ -77,3 +77,28 @@ I started my prototype by working with a *json* dataset of the world's forest ar
     }
 
 ```
+*Displaying Data*
+![screenshot](Project1/images/json_screenshot.png)
+
+#### Working with P5js
+
+*Working the interactive map*
+![map](Project1/images/map1.png)
+
+*Working the each country*
+![map2](Project1/images/map2.png)
+#### Webpage Version 1
+Please refer to this [link](https://pangnasun.github.io/ConnectionsLab/Week-4/Project1/version1/).
+
+#### Challenges
+- Familiarizing myself with P5js
+    - Detecting when a country on the map is clicked
+    - Scaling the shape from the center
+    - Making sure trees spawn inside the shape of each country
+- SheetDB has limited number of api requests
+- Webpage slowed down and sometimes froze when dealing with a lot of data
+
+#### Next Steps
+-   Find better way to represent the data or find better data
+-   Accurately place the tree visual based on the actual forest locations
+-   Add more interactions to help users learn how to help prevent deforestation
