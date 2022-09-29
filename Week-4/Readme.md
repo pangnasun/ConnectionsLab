@@ -87,6 +87,8 @@ I started my prototype by working with a *json* dataset of the world's forest ar
 
 *Working the each country*
 ![map2](Project1/images/map2.png)
+#### Webpage Version 1
+Please refer to this [link](https://pangnasun.github.io/ConnectionsLab/Week-4/Project1/version1/).
 
 #### Challenges
 - Familiarizing myself with P5js
