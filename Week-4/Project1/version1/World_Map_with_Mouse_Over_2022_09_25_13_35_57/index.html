@@ -1,12 +1,38 @@
 <!DOCTYPE html><html lang="en"><head>
+
     <script src="p5.js"></script>
+    <title>World's Forest Area</title>
+    <link rel="icon" href="images/globe_tree.png"  type="image/png">
     <!-- <script src="p5.sound.min.js"></script> -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
     <script src="countries.js"></script>
   </head>
   <body>
-    <script src="sketch.js"></script>
+    
+    <h1 id="title">World's Forest Area (1990-2020)</h1>
+    <div id="headers" class="headers">
+      <button id='country-name' class="button-19 main" disabled>Forest Area</button>
+        <button id="info" class="button-19 info" disabled>Year: 1990 <br><br><br><br>99999 <br><br>hectares     </button>
+        <!-- <button class="button-19 data" disabled>Year:        </button> -->
+       </div>
+       
+    
+    
+    
+      <div id="buttons-container" class="buttons-container">
+        <button id="prev" class="button-19 b1">Previous</button>
+        <button id="next" class="button-19 b2">Next</button>
+        <button id="back" class="button-19 b3">Back</button>
+        <!-- <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button>
+        <button>button</button> -->
+      </div>
+    
+    
   
-
+    <script src="sketch.js"></script>
 </body></html>
