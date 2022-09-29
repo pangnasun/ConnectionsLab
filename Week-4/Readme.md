@@ -87,3 +87,14 @@ I started my prototype by working with a *json* dataset of the world's forest ar
 
 *Working the each country*
 ![map2](Project1/images/map2.png)
+
+#### Challenges
+- Familiarizing myself with P5js
+    - Detecting when a country on the map is clicked
+    - Scaling the shape from the center
+    - Making sure trees spawn inside the shape of each country
+- SheetDB has limited number of api requests
+- Webpage slowed down and sometimes froze when dealing with a lot of data
+
+#### Next Steps
+-   
