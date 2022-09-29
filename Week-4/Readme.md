@@ -77,3 +77,11 @@ I started my prototype by working with a *json* dataset of the world's forest ar
     }
 
 ```
+
+#### Working with P5js
+
+*Working the interactive map*
+![map](Project1/images/map1.png)
+
+*Working the each country*
+![map2](Project1/images/map2.png)
