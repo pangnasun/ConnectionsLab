@@ -97,6 +97,6 @@ I started my prototype by working with a *json* dataset of the world's forest ar
 - Webpage slowed down and sometimes froze when dealing with a lot of data
 
 #### Next Steps
--   Find better way to represent the data
+-   Find better way to represent the data or find better data
 -   Accurately place the tree visual based on the actual forest locations
--   Add more interactions such as suggesting possible actions to help conserve the forests
+-   Add more interactions to help users learn how to help prevent deforestation
