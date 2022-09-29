@@ -1,6 +1,6 @@
 # Project1: Documentation
 
-[Preview](https://pangnasun.github.io/ConnectionsLab/Week-3_JSON_Fetch/Project1_Prototype/)
+[Preview](https://pangnasun.github.io/ConnectionsLab/Week-4/Project1/version1/)
 
 ### Concept
 
