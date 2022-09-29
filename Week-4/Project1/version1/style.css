@@ -164,3 +164,7 @@ h1{
 #info{
   display: none;
 }
+
+#country-name{
+  display:none;
+}
