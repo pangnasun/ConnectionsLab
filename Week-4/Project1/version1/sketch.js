@@ -170,8 +170,10 @@ function draw() {
           countryName.style('display','block');
           countryName.html(countries[i]);
           fill('green');
+          cursor(HAND);
         }else{
           countryName.style('display','none');
+          cursor(ARROW);
         }
 
       }
@@ -187,6 +189,7 @@ function draw() {
       
     }
   }else{
+    cursor(ARROW);
     // countryName.html(countries[currIndex]);
     countryName.style('display','block');
    
