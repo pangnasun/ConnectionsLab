@@ -92,7 +92,7 @@ However, my goal was to zoom in to each country when clicked, so I could display
 *Working the each country*
 ![map2](Project1/images/map2.png)
 
-Scaling and positioning the country polygon and the corresponding trees visual consumed the most time. The process was a combination of meticulous calculations and testings. For example, I needed to calculate how to place the tree visuals inside each polygon dynamically, so it would work for all countries. Then I needed to try different size of the tree visuals, so they would fit the map and represent the data well. Thus, the whole process involved a lot trying things to see what would work best. I included a screenshot of my original code to show how many codes were commented out becaus
+Scaling and positioning the country polygon and the corresponding trees visual consumed the most time. The process was a combination of meticulous calculations and testings. For example, I needed to calculate how to place the tree visuals inside each polygon dynamically, so it would work for all countries. Then I needed to try different size of the tree visuals, so they would fit the map and represent the data well. Thus, the whole process involved a lot trying things to see what would work best. I included a screenshot of my original code to show how many codes were commented out because I tried out so many methods. 
 
 *Sample code that was commented*
 ![map](Project1/images/comments.png)
