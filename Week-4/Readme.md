@@ -87,10 +87,16 @@ With the help from [previous P5js map sketch](https://editor.p5js.org/Kumu-Paul/
 *Working the interactive map*
 ![map](Project1/images/map1.png)
 
-However, my goal was to zoom in to each country when clicked, so I could display forest area information for each country. Thus, I carefully studied the sample code and learned how to use the selected country vertices. Then I worked on how to correctly scale the country polygon, so it would not go beyond the webpage window. 
+However, my goal was to zoom in to each country when clicked, so I could display forest area information for each country. Thus, I carefully studied the sample code and learned how to use the selected country vertices. Then I worked on how to correctly scale the country polygon, so it would not go beyond the webpage window and stay on the right side. 
 
 *Working the each country*
 ![map2](Project1/images/map2.png)
+
+Scaling and positioning the country polygon and the corresponding trees visual consumed the most time. The process was a combination of meticulous calculations and testings. For example, I needed to calculate how to place the tree visuals inside each polygon dynamically, so it would work for all countries. Then I needed to try different size of the tree visuals, so they would fit the map and represent the data well. 
+
+*Sample code shows the process involved a lot of testings*
+![map](Project1/images/comments.png)
+
 #### Webpage Version 1
 Please refer to this [link](https://pangnasun.github.io/ConnectionsLab/Week-4/Project1/version1/).
 
