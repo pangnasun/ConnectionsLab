@@ -117,6 +117,10 @@ Please refer to this [link](https://pangnasun.github.io/ConnectionsLab/Week-4/Pr
 *Current state*
 ![issue](Project1/images/issue1.png)
 
+#### Resources
+- [P5js Map](https://editor.p5js.org/Kumu-Paul/sketches/8awPJGZQ4)
+- [Forest area data](https://ourworldindata.org/forest-area)
+
 #### Last but not least
 
-I had a lot of fun from my first project despite how fustrating it coulde be somtimes. Despite not able to fully accompolish my project concept, I got some satification from what I have achieved so far. I also became much more familarized with HTML, CSS, Javascript, and, especially, P5js. So I really appreciate the help and feedback from Professor Mathura and my classmates. Thank you!
+I had a lot of fun from my first project despite how fustrating it coulde be somtimes. Despite not able to fully accompolish my project concept, I got some satification from what I have achieved so far. I felt that there were always new features that could be added, so the processe could take a lot of time. I also became much more familarized with HTML, CSS, Javascript, and, especially, P5js. So I really appreciate the help and feedback from Professor Mathura and my classmates. Thank you!
