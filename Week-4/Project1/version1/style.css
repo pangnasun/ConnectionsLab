@@ -6,39 +6,16 @@ canvas {
   display: block;
 }
 
-/* button{
-  display: flex;
-  justify-content: end;
-} */
-
 .buttons-container{
   position: absolute;
   display: none;
-  /* flex-direction: column; */
-  /* display: flex; */
   justify-content: center;
   right: 7%;
   bottom: 10%;
   width: 20%;
-  /* margin-left:20px; */
-  /* background-color: red; */
-  /* width:20%;
-  height: 90%; */
-  /* background-color: red; */
-
+ 
 }
 
-/* .container{
-  position: absolute;
-  background-color:red;
-  width: 90%;
-} */
-
-
-
-
-
-/* CSS */
 .button-19 {
   appearance: button;
   /* background-color: #1899D6; */
@@ -129,9 +106,6 @@ canvas {
   flex-direction: column;
   top:10%;
   right: 7%;
-  /* width: 40%; */
-  /* background-color: red; */
-  /* right: 0; */
 }
 
 .main{
@@ -139,7 +113,6 @@ canvas {
   background-color: rgba(15, 153, 54, 0.801);
   padding: 25px 30px;
   border-radius: 16px;
-  /* width: 60%; */
 }
 
 .info{
