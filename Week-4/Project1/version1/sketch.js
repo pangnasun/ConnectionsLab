@@ -172,7 +172,7 @@ function draw() {
     countryName.style('display','block');
    
 
-    if(okay){
+    if(okay){  //only scale increase the polygon size when it fits the screen
       size2 += 0.05;
       let newPolygons = convertPathToPolygons(country[currIndex].vertexPoint,size2); 
       let j = 0;
