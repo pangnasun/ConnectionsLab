@@ -82,8 +82,12 @@ I started my prototype by working with a *json* dataset of the world's forest ar
 
 #### Working with P5js
 
+With the help from [previous P5js map sketch](https://editor.p5js.org/Kumu-Paul/sketches/8awPJGZQ4), I was able to create an interactive map that changed color when each country is clicked. The map was drawn from vertices of each country polygon. 
+
 *Working the interactive map*
 ![map](Project1/images/map1.png)
+
+However, my goal was to zoom in to each country when clicked, so I could display forest area information for each country. Thus, I carefully studied the sample code and learned how to use the selected country vertices. Then I worked on how to scale the country polygon correcly, so it would not go beyond the webpage window. 
 
 *Working the each country*
 ![map2](Project1/images/map2.png)
