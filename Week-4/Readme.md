@@ -87,7 +87,7 @@ With the help from [previous P5js map sketch](https://editor.p5js.org/Kumu-Paul/
 *Working the interactive map*
 ![map](Project1/images/map1.png)
 
-However, my goal was to zoom in to each country when clicked, so I could display forest area information for each country. Thus, I carefully studied the sample code and learned how to use the selected country vertices. Then I worked on how to scale the country polygon correcly, so it would not go beyond the webpage window. 
+However, my goal was to zoom in to each country when clicked, so I could display forest area information for each country. Thus, I carefully studied the sample code and learned how to use the selected country vertices. Then I worked on how to correctly scale the country polygon, so it would not go beyond the webpage window. 
 
 *Working the each country*
 ![map2](Project1/images/map2.png)
