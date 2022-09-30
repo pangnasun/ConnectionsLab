@@ -112,3 +112,6 @@ Please refer to this [link](https://pangnasun.github.io/ConnectionsLab/Week-4/Pr
 -   Find better way to represent the data or find better data
 -   Accurately place the tree visual based on the actual forest locations
 -   Add more interactions to help users learn how to help prevent deforestation
+-   Make the page more flexible to changes in screensize
+*Current state*
+![issue](Project1/images/issue1.png)
