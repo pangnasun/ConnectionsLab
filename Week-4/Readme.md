@@ -14,7 +14,7 @@ My webpage will use p5js to create an interactive map that users can click on ea
 
 #### Working with *json* dataset
 
-I started my prototype by working with a *json* dataset of the world's forest area. I successfully fetched the *json* file in *javascript* and stored the data in an array. I also created a function that takes in the data array, a country name, and a *ul* element as the function's parameters. The goal of this function is to search the name of the country within the array data and display the country's forest area over the years. If the function cannot find the input country name, it will return an error. With this function, I was able to obtain the needed information. This will come in handy when I need to display this information on the map.
+I started my prototype by working with a *json* dataset of the world's forest area. I successfully fetched the *json* file in *javascript* and stored the data in an array. Then I used SheetDB to create a jsion api for my [data](https://sheetdb.io/api/v1/xy54jy17vz6i8). I also created a function that takes in the data array, a country name, and a *ul* element as the function's parameters. The goal of this function is to search the name of the country within the array data and display the country's forest area over the years. If the function cannot find the input country name, it will return an error. With this function, I was able to obtain the needed information. This will come in handy when I need to display this information on the map.
 
 ```
     //fetching json file
@@ -112,3 +112,15 @@ Please refer to this [link](https://pangnasun.github.io/ConnectionsLab/Week-4/Pr
 -   Find better way to represent the data or find better data
 -   Accurately place the tree visual based on the actual forest locations
 -   Add more interactions to help users learn how to help prevent deforestation
+-   Make the page more flexible to changes in screensize
+
+*Current state*
+![issue](Project1/images/issue1.png)
+
+#### Resources
+- [P5js Map](https://editor.p5js.org/Kumu-Paul/sketches/8awPJGZQ4)
+- [Forest area data](https://ourworldindata.org/forest-area)
+
+#### Last but not least
+
+I had a lot of fun from my first project despite how fustrating it coulde be somtimes. Despite not able to fully accompolish my project concept, I got some satification from what I have achieved so far. I felt that there were always new features that could be added, so the processe could take a lot of time. I also became much more familarized with HTML, CSS, Javascript, and, especially, P5js. So I really appreciate the help and feedback from Professor Mathura and my classmates. Thank you!
