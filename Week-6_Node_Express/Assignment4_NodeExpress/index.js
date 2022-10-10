@@ -2,7 +2,7 @@ let express = require('express');
 let app = express();
 let PORT = 3000;
 
-
+//read data from json file
 const fs = require('fs');
 let info;
 fs.readFile('./forest_area.json', 'utf8', (error, data) => {
@@ -15,6 +15,7 @@ fs.readFile('./forest_area.json', 'utf8', (error, data) => {
 
 app.use('/', express.static("public"));
 
+//accessing and providing requested data
 app.get('/countries/:countryEntity', (request, response) => {
     let currCountry = request.params.countryEntity;
     let minYear = request.query.minYear;
