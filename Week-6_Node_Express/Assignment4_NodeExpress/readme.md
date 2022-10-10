@@ -7,7 +7,7 @@
 
 *Params & Query*
 
-![pq #1](images/ provide_data.png)
+![pq #1](images/provide_data.png)
 
 *Fetching data*
 
