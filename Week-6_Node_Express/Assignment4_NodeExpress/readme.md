@@ -1,5 +1,6 @@
 # Assignment 4: Working with Node Express
 
+For this assignment, I created an api server based on data from a json file. 
 
 *Reading from json file*
 
