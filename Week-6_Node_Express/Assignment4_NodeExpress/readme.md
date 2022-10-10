@@ -15,6 +15,7 @@ I was struggling with differentiating between *params* and *query*, especially w
 
 ![pq #1](images/provide_data.png)
 
+For my *javascript*, I learned to combine *params* and *query* parameters into one url. This allows me to search based on country name and filter data based on years. 
 *Fetching data in app.js*
 
 ![fetch_data #1](images/fetch_data.png)
