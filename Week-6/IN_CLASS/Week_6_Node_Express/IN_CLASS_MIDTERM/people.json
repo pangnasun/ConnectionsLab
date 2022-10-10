@@ -1,0 +1,14 @@
+{
+	"Abc": {
+		"id": "0001",
+		"role": "faculty"
+	},
+	"Def": {
+		"id": "0002",
+		"role": "professor"
+	},
+	"Ghi": {
+		"id": "0003",
+		"role": "student"
+	}
+}
