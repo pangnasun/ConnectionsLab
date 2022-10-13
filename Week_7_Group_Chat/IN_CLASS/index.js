@@ -1,12 +1,9 @@
-let express = require('express');
+let express = require("express");
 let app = express();
-let PORT = 3000;
 
+app.use('/', express.static('public'))
 
-app.use('/', express.static("public"));
+app.listen(3000, () => {
+    console.log("app is runnning");
+})
 
-
-
-app.listen(PORT, () => {
-    console.log("app is listening at localhost:" + PORT);
-});
