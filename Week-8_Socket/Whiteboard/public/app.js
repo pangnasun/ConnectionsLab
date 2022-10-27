@@ -8,7 +8,7 @@ socket.on("serverData", (data) => {
     drawPainting(data);
 })
 
-
+let c; 
 function setup() {
     createCanvas(400,400);
    let  r = random(255); // r is a random number between 0 - 255
@@ -17,6 +17,7 @@ function setup() {
    let  a = random(200,255); // a is a random number between 200 - 255
     background("#7332ef");
     stroke(r,g,b,a);
+    c = color('rgba(r,g,b,a)');
     //noStroke();
 }
 
@@ -26,12 +27,14 @@ function mouseDragged(){
         x : mouseX,
         y : mouseY,
         px : pmouseX,
-        py : pmouseY
+        py : pmouseY,
+        col: c
     }
 
     socket.emit("mouseData", mouseObj);
 }
 
 function drawPainting(data){
+    // stroke(data.col);
     line(data.x, data.y,data.px, data.py);
 }
