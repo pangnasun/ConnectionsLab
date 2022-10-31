@@ -12,6 +12,8 @@ Below are the sketches of what the webpage will look like. The main components a
 
 ### Journey
 #### 1. Testing audio chat
+I am working with *Peerjs* to try to create real time communication on my webpage. 
+
 *index.js* 
 ```
 var express = require('express');
