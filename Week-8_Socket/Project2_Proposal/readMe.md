@@ -12,7 +12,7 @@ Below are the sketches of what the webpage will look like. The main components a
 
 ### Journey
 #### 1. Testing audio chat
-I started by working with *Peerjs* to try to create real time communication on my webpage. 
+I started by working with *Peerjs* to try to create a real time communication on my webpage. I have not been able to make a fully functioning chat box yet, but I have made somme progress after reading the documentation. 
 
 *index.js* 
 ```
