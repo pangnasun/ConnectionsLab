@@ -60,3 +60,5 @@ After I successfully uploaded the required, I used keyboard inputs to control wh
     if (abs(dino.vel.x) < 0.1) dino.ani = 'idle';;
 ```
 
+I added the ```javascript mirror.x``` function later to turn my character's direction.
+
