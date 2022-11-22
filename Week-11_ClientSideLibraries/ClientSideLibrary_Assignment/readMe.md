@@ -60,5 +60,5 @@ After I successfully uploaded the required, I used keyboard inputs to control wh
     if (abs(dino.vel.x) < 0.1) dino.ani = 'idle';;
 ```
 
-I added the ```mirror.x``` function later to turn my character's direction because initially, my character only faced one direction. 
+Later on, I added the ```mirror.x``` function to flip my character's facing direction because initially, my character only faced one direction. Although the implement above sufficed some of the basic controls for my character's movements, there are still some bugs that need to be fixed. For example, if I holded the 'a'  or the 'd' keys, then pressed  and released the SPACE key, my character will be stuck in the 'jump' animation instead of swithcing back to  the 'walking' animation. This means that I need to keep track of different states of my character's in order to smoothly switch them. 
 
