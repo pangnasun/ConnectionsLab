@@ -48,7 +48,7 @@ function preload() {
 }
 ```
 
-![sample1](images/codefile.jpeg)
+![sample1](images/codefile.png)
 
 
 
