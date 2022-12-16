@@ -19,4 +19,10 @@ The second wireframe is for the *Leaderboard* page. This page still has the game
 *Wireframe for game leaderboard*
 ![wireframe](images/wireframe2.png)
 
-####
+#### Sample 2D Forest Games
+
+*Topdown 2d forest game*
+![sample1](images/samples/forest2D.jpeg)
+
+*Platformer 2d forest game*
+![sample2](images/samples/sample3.jpeg)
