@@ -173,8 +173,53 @@ Regarding the game mechanics, one feature that I needed to mention is the use of
 ```
 
 ### Database and UI/UX Implementation
-After I got my game running, I used *Node.js* to implement the server-client connection. I used *NeDB* to store the top 10 players' names and scores. Thus, when there is a new score, 
+After I got my game running, I used *Node.js* to implement the server-client connection. I used *NeDB* to store the top 10 players' names and scores. When there is a new score, the server compares it to the previous records. If the score is within the top 10, the server will store it in the database and the 11th player will be eliminated. The process of setting up and configuring the server-client connection was quicker because of previous experience from project 2.
 
+```javascript
+ app.post("/api/scores", (req, res) => {
+    const { name, score } = req.body;
+    if (name === undefined || score === undefined) {
+        res.status(400).send("Invalid request");
+    } else {
+        let currentHighScore = 0;
+
+        // Get high score
+        db.find({})
+            .sort({ score: -1 })
+            .limit(1)
+            .exec((err, docs) => {
+                if (err) {
+                    res.status(500).send(err);
+                } else {
+                    if (docs.length > 0) {
+                        currentHighScore = docs[0].score;
+                    }
+
+                    // Save score and name to db
+                    db.insert({ name, score }, (err, newDoc) => {
+                        if (err) {
+                            res.status(500).send(err);
+                        } else {
+                            res.send({
+                                ...newDoc,
+                                highScore: Math.max(currentHighScore, score),
+                                highScoreBroken: score > currentHighScore,
+                            });
+                        }
+                    });
+                }
+            });
+    }
+});
+```
+
+The last thing that I did was customzing the user interface, which basically followed the wireframes. I made sure that I kept the same theme through out the different pages and players are able to go back to the main page. I also checked that the color contrast made the letters readible and clear to viewers. The buttons also changed colors when the mouse is hovering on them. 
+
+
+### IM Showcase
+I was delighted that my testers enjoyed my game as well as found it a bit challenging. Players positively commented on the beautiful background and the lively animations of the hero and enemies. They found the sound effect and background music fitting and the control convenient. When it came to the difficulty, some found it a bit challenging because the randomness of the enemies spawning through them. Yet, they saide it's addictive because they wanted to get a higher.
+
+The best comment was for me to create this into an app and they would it!
 
 
 ### Overall Challenges
@@ -186,6 +231,7 @@ After I got my game running, I used *Node.js* to implement the server-client con
 ### Lessons Learned
 - Learned to use *p5js* sound addon, p5.play, p5.collide2D
 - Learned to effectively organize code files to speed up work
+- 
 
 
 ### Future Updates
@@ -193,4 +239,7 @@ After I got my game running, I used *Node.js* to implement the server-client con
 - 3D/Topdown version: Players gain more immersive experience
 - Game Mechanics: Players are able to attack and navigate freely
 - Storyline: Players can embark on various quests to create unqiue journeys
+
+
+
 
