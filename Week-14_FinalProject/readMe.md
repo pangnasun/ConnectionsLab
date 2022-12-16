@@ -79,11 +79,34 @@ let scoreBoard;
 let currentScene;
 let scenes = {};
 
-let level;
+let level1, level2, level3;
 
 let input, button, greeting;
 ```
 
+Once I created these "global" variables in the *dictionary.js*, I initialized them in other files. For example, I used *preload.js* to preload all the image and audio files, so I could use them in my game.
+
+```javascript
+function preload() {
+    imgBackground = loadImage("assets/images/background/forest3.webp");
+    imgHero = loadImage(heroSprite.imagePath);
+    imgEnemy = loadImage(enemySprite.imagePath);
+    imgEnemyTroll = loadImage(enemyTrollSprite.imagePath);
+    imgEnemyFlying = loadImage(enemyFlyingSprite.imagePath);
+    gameOverImage = loadImage("assets/images/assets/game-over.png");
+    startupImage = loadImage("assets/images/background/forest3.webp");
+    heartImage = loadImage("assets/images/assets/heart.png");
+    startupFont = loadFont("assets/images/assets/fontStart.otf");
+    bgMusic = loadSound("assets/audio/bg_music.mp3");
+    
+
+    // Levels
+    level1 = loadJSON("levels/01.json");
+    level2 = loadJSON("levels/02.json");
+    leve3 = loadJSON("levels/02.json");
+}
+
+```
 
 
 
