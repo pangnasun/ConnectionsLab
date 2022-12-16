@@ -6,3 +6,9 @@ My project will be a multiplayer-capable 2D online game where players journey th
 I hope to use p5.play to create animations and make the forest come to live. My aim is to create a very pleasing environment for players to explore.
 
 ### Wireframes
+
+*Wireframe for game mainpage*
+![wireframe](images/wireframe1.png)
+
+*Wireframe for game leaderboard*
+![wireframe](images/wirefram21.png)
