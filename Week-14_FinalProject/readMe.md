@@ -52,6 +52,38 @@ Once I got my character and enemy sprites to animate, I realized that I needed t
 <!-- ![codes](images/codefiles.png =250x) -->
 <img src="images/codefiles.png" width="250">
 
+The most effective *javascript* file that I created was *dictionary.js* because it contained all the variables that I could refer from other *javascript* files, which allowed me to use them throughout the game. 
+
+```javascript
+
+const BG_SPEED = 2;
+const GAME_FRAME_RATE = 40;
+
+let game;
+let startup;
+
+let imgBackground;
+let bgMusic;
+let gameOverImage;
+let startupImage;
+let startupFont;
+
+let heartImage;
+let life;
+
+let scenario;
+let score;
+let buttonManager;
+let scoreBoard;
+
+let currentScene;
+let scenes = {};
+
+let level;
+
+let input, button, greeting;
+```
+
 
 
 
