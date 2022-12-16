@@ -54,6 +54,7 @@ Once I got my character and enemy sprites to animate, I realized that I needed t
 
 The most effective *javascript* file that I created was *dictionary.js* because it contained all the variables that I could refer from other *javascript* files, which allowed me to use them throughout the game. 
 
+*snipet from dictionary.js*
 ```javascript
 
 const BG_SPEED = 2;
@@ -86,6 +87,7 @@ let input, button, greeting;
 
 Once I created these "global" variables in the *dictionary.js*, I initialized them in other files. For example, I used *preload.js* to preload all the image and audio files, so I could use them in my game.
 
+*snipet from preload.js*
 ```javascript
 function preload() {
     imgBackground = loadImage("assets/images/background/forest3.webp");
@@ -107,7 +109,45 @@ function preload() {
 }
 
 ```
+*snipet from game.js*
+```javascript
+ if (hero.collisionCheck(currentEnemy)) {
+            this.hurtSound.play();
+            life.oneLost();
+            hero.setInvincible();
+            if (life.current === 0) {
+                this.gameOverSound.play();
+                noStroke();
+                fill('rgba(0,0,0,1)');
+                rect(width / 2 - 300, height / 3 -100, 600, 400);
+                image(gameOverImage, width * 0.5 - 200, height * 0.5 - 200);
+                textSize(65);
+                
+                fill('#FFF');
+                text('Your Score: ' + parseInt(score.score), width/2 , height/2);
+                
 
+                input = createInput(["enter your name"]);
+                // input = createElement('input', "enter your name");
+                input.position(width/2 - 100, height/2 + 50);
+
+                button = createButton('submit');
+                button.position(input.x + input.width, height / 2 +50);
+                button.mousePressed(this.submitInfo);
+
+                // greeting = createElement('h2', 'what is your name?');
+                // greeting.position(20, 5);
+
+                textAlign(CENTER);
+                textSize(50);
+
+                noLoop();
+            }
+        }
+   life.draw();
+   if(life.current > 0) score.displayScore();
+   score.addScore();
+```
 
 
 
