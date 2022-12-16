@@ -49,7 +49,7 @@ function preload() {
 ```
 Once I got my character and enemy sprites to animate, I realized that I needed to create the many version of the same enemes. The best way to handle this repetition is to create a class for them, so I can create unique enemy objects for them. Besides creating a class for the enemies, I also needed to create class for my hero, score, life, etc. 
 
-![codes](images/codefiles.png)
+![codes](images/codefiles.png =250x)
 
 
 
