@@ -22,7 +22,7 @@ The second wireframe is for the *Leaderboard* page. This page still has the game
 #### Sample 2D Forest Games
 
 *Topdown 2d forest game*
-![sample1](images/sample/forest2D.jpeg)
+![sample1](images/samples/forest2D.jpeg)
 
 *Platformer 2d forest game*
-![sample2](images/sample/sample3.jpeg)
+![sample2](images/samples/sample3.jpeg)
