@@ -220,9 +220,9 @@ The last thing that I did was customzing the user interface, which basically fol
 I was delighted that my testers enjoyed my game as well as found it a bit challenging. Players positively commented on the beautiful background and the lively animations of the hero and enemies. They found the sound effect and background music fitting and the control convenient. When it came to the difficulty, some found it a bit challenging because the randomness of the enemies spawning through them. Yet, they saide it's addictive because they wanted to get a higher.
 
 
-<img src="images/p1.png" >
-<img src="images/p2.png" >
-<img src="images/p3.png" >
+<img src="images/p1.png" width="850">
+<img src="images/p2.png" width="850" >
+<img src="images/p3.png" width="850">
 
 The best comment was for me to create this into an app and they would purchase it!
 
