@@ -148,6 +148,49 @@ function preload() {
    if(life.current > 0) score.displayScore();
    score.addScore();
 ```
+Orgnazing my code into different classes and *javascript* files speeded up my process a lot. I was able to quickly find what I was looking for, and each file does not many lines of code at all. 
+
+Regarding the game mechanics, one feature that I needed to mention is the use of *p5.collide2D*. This library allowed me to calculate collision detection for my 2D sprites. As shown in the code snipet below, I created a function called *collisinCheck()* in my *hero.js* to check when my hero gets in contact with the enemies. The library *p5.collide2D* has a function called *collideRectRect(x1,y1,width1,heigh1t,x2,y2,width,height)*. Provided the coordinates and the widths and heights of my hero and enemy, the fuction could determin whether the two objects collide or not.
+
+```javascript
+  collisionCheck(enemy) {
+     if (this.invincible) {
+         return false;
+     }
+
+     return collideRectRect(
+         this.x,
+         this.y,
+         this.imageWidth * this.hitBoxOffset,
+         this.imageHeight * this.hitBoxOffset,
+         enemy.x,
+         enemy.y,
+         enemy.imageWidth * this.hitBoxOffset,
+         enemy.imageHeight * this.hitBoxOffset,
+     );
+    }
+
+```
+
+### Database and UI/UX Implementation
+After I got my game running, I used *Node.js* to implement the server-client connection. I used *NeDB* to store the top 10 players' names and scores. Thus, when there is a new score, 
 
 
+
+### Overall Challenges
+- Spriets: Searching for the desired sprites took a lot of time
+- Collision detection: objects collide with the transparent background the sprite image
+- Multiplayer: Spawning various versions of the hero make them overlap each other
+
+
+### Lessons Learned
+- Learned to use *p5js* sound addon, p5.play, p5.collide2D
+- Learned to effectively organize code files to speed up work
+
+
+### Future Updates
+- Multiplayer: Multiple players journey through the forest together
+- 3D/Topdown version: Players gain more immersive experience
+- Game Mechanics: Players are able to attack and navigate freely
+- Storyline: Players can embark on various quests to create unqiue journeys
 
