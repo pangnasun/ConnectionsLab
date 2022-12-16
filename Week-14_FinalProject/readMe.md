@@ -11,4 +11,4 @@ I hope to use p5.play to create animations and make the forest come to live. My 
 ![wireframe](images/wireframe1.png)
 
 *Wireframe for game leaderboard*
-![wireframe](images/wirefram21.png)
+![wireframe](images/wireframe2.png)
