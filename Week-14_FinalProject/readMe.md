@@ -112,38 +112,38 @@ function preload() {
 *snipet from game.js*
 ```javascript
  if (hero.collisionCheck(currentEnemy)) {
-            this.hurtSound.play();
-            life.oneLost();
-            hero.setInvincible();
-            if (life.current === 0) {
-                this.gameOverSound.play();
-                noStroke();
-                fill('rgba(0,0,0,1)');
-                rect(width / 2 - 300, height / 3 -100, 600, 400);
-                image(gameOverImage, width * 0.5 - 200, height * 0.5 - 200);
-                textSize(65);
-                
-                fill('#FFF');
-                text('Your Score: ' + parseInt(score.score), width/2 , height/2);
-                
+    this.hurtSound.play();
+    life.oneLost();
+    hero.setInvincible();
+    if (life.current === 0) {
+        this.gameOverSound.play();
+        noStroke();
+        fill('rgba(0,0,0,1)');
+        rect(width / 2 - 300, height / 3 -100, 600, 400);
+        image(gameOverImage, width * 0.5 - 200, height * 0.5 - 200);
+        textSize(65);
 
-                input = createInput(["enter your name"]);
-                // input = createElement('input', "enter your name");
-                input.position(width/2 - 100, height/2 + 50);
+        fill('#FFF');
+        text('Your Score: ' + parseInt(score.score), width/2 , height/2);
 
-                button = createButton('submit');
-                button.position(input.x + input.width, height / 2 +50);
-                button.mousePressed(this.submitInfo);
 
-                // greeting = createElement('h2', 'what is your name?');
-                // greeting.position(20, 5);
+        input = createInput(["enter your name"]);
+        // input = createElement('input', "enter your name");
+        input.position(width/2 - 100, height/2 + 50);
 
-                textAlign(CENTER);
-                textSize(50);
+        button = createButton('submit');
+        button.position(input.x + input.width, height / 2 +50);
+        button.mousePressed(this.submitInfo);
 
-                noLoop();
-            }
-        }
+        // greeting = createElement('h2', 'what is your name?');
+        // greeting.position(20, 5);
+
+        textAlign(CENTER);
+        textSize(50);
+
+        noLoop();
+    }
+   }
    life.draw();
    if(life.current > 0) score.displayScore();
    score.addScore();
