@@ -7,7 +7,7 @@ I hope to use p5.play to create animations and make the forest come to live. My 
 
 ### Process
 #### Wireframes
-My process began with creating wireframes for my website. 
+My process began with creating wireframes for my website. Overall, the font sizes and the number of buttons make the pages simple and easy to navigate around. 
 
 The first wireframe determines the layout of the main page, which includes the title, and the *Leaderboard* and *Start Game* buttons. I envisioned players would come to this page and were able to clearly see the title and click on the *Start Game* button to start playing the game.  
 
@@ -18,3 +18,5 @@ The second wireframe is for the *Leaderboard* page. This page still has the game
 
 *Wireframe for game leaderboard*
 ![wireframe](images/wireframe2.png)
+
+####
