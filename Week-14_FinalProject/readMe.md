@@ -49,7 +49,7 @@ function preload() {
 ```
 Once I got my character and enemy sprites to animate, I realized that I needed to create the many version of the same enemes. The best way to handle this repetition is to create a class for them, so I can create unique enemy objects for them. Besides creating a class for the enemies, I also needed to create class for my hero, score, life, etc. 
 
-<!-- ![codes](images/codefiles.png =250x) -->
+
 <img src="images/codefiles.png" width="250">
 
 The most effective *javascript* file that I created was *dictionary.js* where I created variabled that could be refered from other files. I figured that I needed this file when I lost track of the names and locations of variables that I created. Having these variables in one file was time effecient when I needed to create new variables or refer to an old one.  
@@ -219,7 +219,12 @@ The last thing that I did was customzing the user interface, which basically fol
 ### IM Showcase
 I was delighted that my testers enjoyed my game as well as found it a bit challenging. Players positively commented on the beautiful background and the lively animations of the hero and enemies. They found the sound effect and background music fitting and the control convenient. When it came to the difficulty, some found it a bit challenging because the randomness of the enemies spawning through them. Yet, they saide it's addictive because they wanted to get a higher.
 
-The best comment was for me to create this into an app and they would it!
+
+<img src="images/p1.png" width="250">
+<img src="images/p2.png" width="250">
+<img src="images/p3.png" width="250">
+
+The best comment was for me to create this into an app and they would purchase it!
 
 
 ### Overall Challenges
@@ -231,7 +236,7 @@ The best comment was for me to create this into an app and they would it!
 ### Lessons Learned
 - Learned to use *p5js* sound addon, p5.play, p5.collide2D
 - Learned to effectively organize code files to speed up work
-- 
+- Create an app for my game!
 
 
 ### Future Updates
