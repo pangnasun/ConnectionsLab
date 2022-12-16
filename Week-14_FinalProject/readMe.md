@@ -20,7 +20,8 @@ The second wireframe is for the *Leaderboard* page. This page still has the game
 ![wireframe](images/wireframe2.png)
 
 #### Sample 2D Forest Games
-I started to work on the design of my game by getting inspiration from existing games. First, I went through a huge collection of 2D games with the forest theme. Then I started to look into topdown 2D forest games where players see the whole map of the games. I found many great background images and maps to create various environments for my games. However, it was harder to find character sprites for this type of game because most of them were pixelated and in low quality. The background objects are divided into tilesets, which required extra work to arrange and pieces them together. 
+I started to work on the design of my game by getting inspiration from existing games. First, I went through a huge collection of 2D games with the forest theme. Then I started to look into topdown 2D forest games where players see the whole map of the games. I found many great background images and maps to create various environments for my games. However, it was harder to find character sprites for this type of game because most of them were pixelated and in low quality. The background objects are divided into tilesets, which required extra work to arrange and put them together. 
+
 *Topdown 2D forest game*
 ![sample1](images/samples/forest2D.jpeg)
 <br>
