@@ -34,6 +34,19 @@ The one disadvange of a paltfom game is the users are not exposed to the whole m
 
 ### Game Implmentation
 
+Once I obtained the neccessary sprites and background images, I started to begin the coding process. I started with the *index.html* and made sure to include neccessary libraries like *p5js,* *p5.play,* etc. After setting up all the neccesary files connections, the first thing I did in the *javascript* was to create animation from my sprites. Using *p5.play*, I was easily able to get get to work. 
+
+```javascript
+function preload() {
+    //upload sprites
+    troll = new Sprite(240, 200);
+    dino.addAni( 'idle', 'assets/dino/idle001.png', 10);
+    dino.addAni('walk', 'assets/dino/walk001.png', 10);
+    dino.addAni('sleep', 'assets/dino/sleep001.png', 8);
+    dino.addAni('attack', 'assets/dino/attack001.png', 12);
+    dino.ani = 'idle';
+}
+```
 
 
 
