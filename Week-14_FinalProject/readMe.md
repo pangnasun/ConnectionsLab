@@ -52,7 +52,7 @@ Once I got my character and enemy sprites to animate, I realized that I needed t
 <!-- ![codes](images/codefiles.png =250x) -->
 <img src="images/codefiles.png" width="250">
 
-The most effective *javascript* file that I created was *dictionary.js* because it contained all the variables that I could refer from other *javascript* files, which allowed me to use them throughout the game. 
+The most effective *javascript* file that I created was *dictionary.js* where I created variabled that could be refered from other files. I figured that I needed this file when I lost track of the names and locations of variables that I created. Having these variables in one file was time effecient when I needed to create new variables or refer to an old one.  
 
 *snipet from dictionary.js*
 ```javascript
@@ -85,7 +85,7 @@ let level1, level2, level3;
 let input, button, greeting;
 ```
 
-Once I created these "global" variables in the *dictionary.js*, I initialized them in other files. For example, I used *preload.js* to preload all the image and audio files, so I could use them in my game.
+Once I created these "global" variables in the *dictionary.js*, I could initialize them in other files. For example, I used *preload.js* to preload and keep track of all the audio and image files that I used. After the variables were initilized, I could use them in another file, like *game.js*, where the game is actually running.
 
 *snipet from preload.js*
 ```javascript
