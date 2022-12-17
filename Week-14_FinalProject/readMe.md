@@ -1,10 +1,11 @@
 # Forest Adventures
 
 ## Concept
-My project will be a multiplayer-capable 2D online game where players journey through a dangerous forest to conquer various enemies. Players can tackle these challenges alone or with another player. Their journey will be guided by the game’s storyline and quests. I am still deciding whether I should need a scoring system to motivate players to play this game. 
+My project will be a single-player, 2D, paltform online game where players journey through a dangerous forest to conquer various enemies. The game is a trial of how long they are able to survive by avoiding these enemies. Random enemies will pop on their path, so players need to keep eyes open and react fast. Their scores will be based on the amount of time they have survived. Ten players with the higest scores will be displayed on the top-ten leaderboard.
  
-I hope to use p5.play to create animations and make the forest come to live. My aim is to create a very pleasing environment for players to explore.
+I hope to use p5.play to create animations and make the forest come to live. My aim is to use various sprites and high-quality images to make an enjoyable environment for the audience. 
 
+[Preview](https://forest-adventures.glitch.me/)
 ## Process
 ### Wireframes
 My process began with creating wireframes for my website. Overall, the font sizes and the number of buttons make the pages simple and easy to navigate around. 
@@ -215,9 +216,12 @@ After I got my game running, I used *Node.js* to implement the server-client con
 
 The last thing that I did was customzing the user interface, which basically followed the wireframes. I made sure that I kept the same theme through out the different pages and players are able to go back to the main page. I also checked that the color contrast made the letters readible and clear to viewers. The buttons also changed colors when the mouse is hovering on them. 
 
+### Game
+
+[Let's Play](https://forest-adventures.glitch.me/)
 
 ### IM Showcase
-I was delighted that my testers enjoyed my game as well as found it a bit challenging. Players positively commented on the beautiful background and the lively animations of the hero and enemies. They found the sound effect and background music fitting and the control convenient. When it came to the difficulty, some found it a bit challenging because the randomness of the enemies spawning through them. Yet, they saide it's addictive because they wanted to get a higher.
+I was delighted that my testers enjoyed my game as well as found it a bit challenging. Players positively commented on the beautiful background and the lively animations of the hero and enemies. They found the sound effect and background music fitting and the control convenient. When it came to the difficulty, some found it a bit challenging because the randomness of the enemies spawning through them. Yet, they saide it's addictive because they wanted to get a higher. In addition, this game was popular amount kids because they spent a lot of time it.  
 
 
 <img src="images/p1.png" width="850">
