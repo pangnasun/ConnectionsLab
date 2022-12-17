@@ -216,6 +216,9 @@ After I got my game running, I used *Node.js* to implement the server-client con
 
 The last thing that I did was customzing the user interface, which basically followed the wireframes. I made sure that I kept the same theme through out the different pages and players are able to go back to the main page. I also checked that the color contrast made the letters readible and clear to viewers. The buttons also changed colors when the mouse is hovering on them. 
 
+### Github Repo
+[Link to resources](https://github.com/pangnasun/SP_ForestAdventures)
+
 ### Game
 
 [Let's Play](https://forest-adventures.glitch.me/)
